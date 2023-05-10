@@ -1,0 +1,17 @@
+/* ------------------------------------------------------------ *\
+	SLider
+\* ------------------------------------------------------------ */
+
+.slider--maps .slider__nav { position: absolute; left: -4.1%; right: -4.1%; top: 0; bottom: 0; display: flex; align-items: center; justify-content: space-between; pointer-events: none; flex-direction: row-reverse; }
+.slider--maps .slider__link { width: 2.27%; pointer-events: all; transition: .2s ease-out; }
+.slider--maps .slider__link.disabled { pointer-events: none; opacity: .3; }
+.slider--maps .slider__link img { width: 100%; }
+.slider--maps .slider__link:hover { opacity: .5; }
+.slider--maps .owl-nav { display: none; }
+.slider--maps .owl-dots { position: absolute; bottom: 1.4vw; left: 0; right: 0; text-align: center; z-index: 3; }
+.slider--maps .owl-dot { position: relative; display: inline-block; width: 1px; height: 1px; border: none !important; border-radius: 50%; background-color: transparent !important; box-shadow: 0 0 0 0.36vw #c6c4be, 0 0 0 0.36vw #c6c4be inset, 0.025vw 0.025vw 0 0.025vw rgba(0,0,0,0.5) inset; transition: .2s ease-out; }
+.slider--maps .owl-dot:before { position: absolute; content: ''; display: block; left: -0.3vw; top: -0.3vw; bottom: -0.3vw; right: -0.3vw; border-radius: 50%; }
+.slider--maps .owl-dot.active:before { box-shadow: 0.025vw 0.025vw 0vw 0.03vw rgba(0,0,0,0.7) inset; }
+.slider--maps .owl-dot:not(.active):hover { background-color: transparent !important; box-shadow: 0 0 0 0.36vw #8c897d, 0 0 0 0.36vw #8c897d inset, 0.025vw 0.025vw 0 0.025vw rgba(0,0,0,1) inset; }
+.slider--maps .owl-dot.active { background-color: transparent !important; box-shadow: 0 0 0 0.36vw #8c897d, 0 0 0 0.36vw #8c897d inset, 0.025vw 0.025vw 0 0.025vw rgba(0,0,0,1) inset; }
+.slider--maps .owl-dot + .owl-dot { margin-left: 2.5vw; }

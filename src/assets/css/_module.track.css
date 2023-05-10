@@ -1,0 +1,18 @@
+/* ------------------------------------------------------------ *\
+	track
+\* ------------------------------------------------------------ */
+
+.track { filter: drop-shadow(0px 0px 0.16vw #fcee21) drop-shadow(0px 0px 0.26vw #000); fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 15; stroke: #fcee21; transition: stroke-dashoffset 5s cubic-bezier(0.22, 0.61, 0.36, 1); }
+.track svg { position: absolute; top: 0; left: 0; width: 100%; height: 100%; max-height: 100%; display: block; overflow: visible; }
+
+/*  track--1  */
+.track--1 { stroke-dasharray: 5839; stroke-dashoffset: 5839; }
+
+/*  track--2  */
+.track--2 { stroke-dasharray: 3928; stroke-dashoffset: 3928; }
+
+/*  track--3  */
+.track--3 { stroke-dasharray: 4875; stroke-dashoffset: 4875; }
+
+/*  track--4  */
+.track--4 { stroke-dasharray: 2761; stroke-dashoffset: 2761; }

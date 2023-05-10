@@ -1,0 +1,16 @@
+/* ------------------------------------------------------------ *\
+	Numbers
+\* ------------------------------------------------------------ */
+
+.numbers { margin-top: -1.67vw; margin-bottom: 0; }
+.numbers + .section__foot { margin-top: -5vw; margin-bottom: 4.33vw; padding-right: 13.04vw; }
+.number { display: flex; flex-wrap: wrap; padding: 0 6vw; margin-bottom: -2vw; }
+.number .number__image { width: 21.36vw; }
+.number .number__content { width: calc(100% - 21.36vw); padding-top: 5.54vw; padding-bottom: 0; padding-left: 1.83vw; }
+.number h6 { color: $red; font-weight: 500; text-transform: uppercase; letter-spacing: 0.07vw; margin-bottom: 1.63vw; padding-left: 2.17vw; position: relative; padding-bottom: 2.08vw; }
+.number h6:after { content: ''; position: absolute; width: 100%; bottom: 0; left: 0; background: url(../images/temp/dash-b.png) repeat-x 0 0; height: 0.26vw; background-size: 3.53% 100%; }
+.number h6:before { content: ''; position: absolute; bottom: -0.33vw; right: 0; border-radius: 50%; background: rgba(0,0,0,.3); width: 0.97vw; height: 0.97vw; }
+.number ol { line-height: 1.32; }
+.number .number__content > ol > li { margin-bottom: 2.5vw; }
+.number .number__content > ol { padding-left: 4.42vw; list-style-type: upper-alpha; }
+.number .number__content > ol ol { padding-left: 2vw; list-style-type: decimal; font-size: 1.57vw; line-height: 1.57; }

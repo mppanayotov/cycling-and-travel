@@ -1,0 +1,28 @@
+/* ------------------------------------------------------------ *\
+	Grid
+\* ------------------------------------------------------------ */
+
+.grid { width: 100%; font-family: 'HandofSean', sans-serif; color: #fff; display: flex; flex-wrap: wrap; }
+
+.grid .grid__col { height: 43.49vw; background-size: cover; background-position: center; width: 33.33%; padding: 1.83vw 2.08vw; display: flex; align-content: flex-end; align-items: flex-end; letter-spacing: 0.21vw; float: left; background-repeat: no-repeat; position: relative; }
+.grid .grid__col img { position: absolute; max-width: calc(100% + 13.08vw); width: calc(100% + 13.08vw); left: calc(50% + 1.53vw); transform: translateZ(0) translateX(-50%); z-index: 5; top: -4.75vw; height: 112.1%; }
+.grid .grid__col img.alignleft { left: calc(50% - 1.97vw); }
+
+.grid .grid__col--tall { width: 33.33%; height: 78.31vw; z-index: 10; } 
+.grid .grid__col--tall-sec { height: 156.56vw; } 
+.grid .grid__col--tall-sec img { top: -4.76vw; height: 106.07%; } 
+.grid .grid__col--tall-sec img.alignleft { left: calc(50% - 1.5vw); } 
+
+.grid .grid__col--short { height: 38.54vw; width: 50%; }
+
+.grid-outer { margin: -1.13vw 0 0; }
+.grid-outer + .grid-outer { margin-top: 0; }
+
+.grid .grid__col--2of3 { width: 66.66%; height: auto; display: flex; flex-wrap: wrap; padding: 0; position: relative; }
+.grid .grid__col--2of3:before { content: ''; position: absolute; top: 0; right: 0; width: 100%; height: 100%; background-image: url(../images/temp/shadow.png); background-size: 100% 100%; background-position: center; z-index: 5; }
+
+.grid .grid__col--2of3 .grid__col { width: 100%; height: 39.16vw; } 
+.grid .grid__col--2of3 .grid__col--1of2 { width: 50%; height: 39.16vw; } 
+.grid .grid__col--large .grid__col--1of2 { height: 46.96875; } 
+
+.grid--secondary { margin: 0 6.08vw; width: calc(100% - 12.17vw); }

@@ -1,0 +1,41 @@
+/* ------------------------------------------------------------ *\
+	Sidebar
+\* ------------------------------------------------------------ */
+
+.sidebar { position: relative; display: flex; flex-direction: column; align-items: flex-start; padding: 4.7vw 11% 2.9vw; }
+.sidebar .sidebar__content { position: relative; margin-top: 1.9vw; font-size: 1.25vw; line-height: 1.5; color: #fff; }
+.sidebar .sidebar__content p + p { margin-top: 1.9vw;  }
+.sidebar .sidebar__content .list-hyphen { display: inline-block; width: 100%; max-width: 49%; vertical-align: top; white-space: nowrap; }
+
+.sidebar .sidebar__title img { max-width: 100%; }
+.sidebar .sidebar__title--1 img { width: 16.77vw; }
+.sidebar .sidebar__title--2 img { width: 16.88vw; }
+.sidebar .sidebar__title--3 img { width: 16.88vw; }
+.sidebar .sidebar__title--4 img { width: 17.03vw; }
+.sidebar .sidebar__title--5 img { width: 16.25vw; }
+.sidebar .sidebar__title--6 img { width: 16.56vw; }
+.sidebar .sidebar__title--7 img { width: 15.94vw; }
+.sidebar .sidebar__title--8 img { width: 19.58vw; }
+.sidebar .sidebar__title--9 img { width: 18.8vw; }
+.sidebar .sidebar__title--10 img { width: 11.56vw; }
+.sidebar .sidebar__title--11 img { width: 18.02vw; }
+.sidebar .sidebar__title--12 img { width: 19.64vw; }
+.sidebar .sidebar__title--13 img { width: 17.19vw; }
+.sidebar .sidebar__title--14 img { width: 16.88vw; }
+.sidebar .sidebar__title--15 img { width: 18.39vw; }
+.sidebar .sidebar__title--16 img { width: 18.13vw; }
+.sidebar .sidebar__title--17 img { width: 15.73vw; }
+.sidebar .sidebar__title--18  img { width: 16.35vw; }
+
+.sidebar .sidebar__map { position: relative; flex-grow: 1; display: flex; flex-direction: column; justify-content: flex-end; align-items: center; width: 100%;  }
+.sidebar .sidebar__map > img { width: 12.29vw; max-width: 100%; }
+
+.sidebar .list-dot { margin-top: 1.15vw; }
+
+/*  Sidebar Big  */
+.sidebar--big { padding: 4.7vw 15.5% 2.9vw; }
+.sidebar--big .sidebar__content  { margin-top: 7.6vw; font-size: 1.2vw; line-height: 1.2; }
+.sidebar--big .sidebar__map { justify-content: flex-start; align-items: center; width: 100%; max-height: calc(100% - 30vw); }
+.sidebar--big .sidebar__map.sticky { will-change: min-height; }
+.sidebar--big .sidebar__inner{ width: 100%; transform: translate(0, 0); transform: translate3d(0, 0, 0); will-change: position, transform; }
+.sidebar--big .map { left: -2.65vw; top: 7.3vw; }

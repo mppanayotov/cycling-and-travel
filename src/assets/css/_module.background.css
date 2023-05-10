@@ -1,0 +1,38 @@
+/* ------------------------------------------------------------ *\
+	Background frame
+\* ------------------------------------------------------------ */
+
+.background-frame { position: absolute; top: 0; left: 0px; bottom: 0; right: 0px; overflow: hidden; pointer-events: none; }
+.background-frame:before { content: ''; position: absolute; display: block; left: 0; right: 0; top: 0.78vw; bottom: 0.78vw; border-top: 1px solid #232525; border-bottom: 1px solid #232525; }
+.background-frame:after { content: ''; position: absolute; display: block; left: 0.78vw; right: 0.78vw; top: 0; bottom: 0; border-left: 1px solid #232525; border-right: 1px solid #232525; }
+
+.row--borders-within > .col--right .background-frame { margin-left: 1px; }
+
+/* ------------------------------------------------------------ *\
+	Background gradient
+\* ------------------------------------------------------------ */
+
+.background-gradient { background-image: linear-gradient(to top, rgba(40,42,42,.2) 0%, rgba(255,255,255,.2) 100%); }
+
+.background-gradient-note  { background-image: linear-gradient(to top, rgba(40,42,42,0) 0% 30%, rgba(255,255,255,1) 100%); }
+
+/* ------------------------------------------------------------ *\
+	Background white 
+\* ------------------------------------------------------------ */
+
+.background-white { background-color: rgba(255,255,255,0.85); }
+
+/* ------------------------------------------------------------ *\
+	Background pattern
+\* ------------------------------------------------------------ */
+
+.background-pat { position: relative; }
+.background-pat:before { content: ''; display: block; position: absolute; top: 0; bottom: 0; left: 0; right: 0; background-color: rgba(24,25,25,1); }
+.background-pat:after { content: ''; display: block; position: absolute; top: 0; bottom: 0; left: 0; right: 0;  background-image: url(../images/temp/dark-pat.png); background-repeat: repeat; opacity: 0.8; z-index: 0; }
+
+/* ------------------------------------------------------------ *\
+	Background pattern gradient
+\* ------------------------------------------------------------ */
+
+.background-pat-grad { position: relative; background-image: url(../images/temp/gallery-bg-pat.jpg); background-repeat: repeat; }
+.background-pat-grad:before { content: ''; display: block; position: absolute; left: 0; right: 0; bottom: 0; top: 0;  background-image: linear-gradient(to top, rgba(40,42,42,.2) 0%, rgba(255,255,255,.2) 100%); }

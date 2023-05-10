@@ -1,0 +1,23 @@
+/* ------------------------------------------------------------ *\
+	Title
+\* ------------------------------------------------------------ */
+
+.title { position: absolute; top: 0; left: 0; padding: 6.08vw 7.86vw; z-index: 5; }
+
+.title--right { left: auto; right: 0; padding: 4.5vw 4.12vw; }
+
+.title--center { top: 7.29vw; left: 50%; margin-left: -1.83vw; transform: translateX(-50%);  padding: 0; }
+
+.title--japan { margin-top: 10vw; margin-left: 0.7vw; }
+
+/* ------------------------------------------------------------ *\
+	Ttitle image
+\* ------------------------------------------------------------ */
+
+.title-image { position: absolute; z-index: 5;  }
+
+.title-image--bus { top: 22.46vw; left: -0.75vw; width: 37.29vw; height: 38.91vw; }
+
+.title-image--booth  { top: -2.04vw; left: 60.38vw; width: 34.43vw; height: 43.03vw;  }
+
+.title-image--foreign  { top: 30.46vw; left: 40.21vw; width: 21.67vw;  }

@@ -1,0 +1,19 @@
+/* ------------------------------------------------------------ *\
+	photo
+\* ------------------------------------------------------------ */
+
+.photo { padding: 1.8vw 1.7vw; border-left: 1px solid #fff; max-width: 100%; flex: 1 1 auto; display: flex; justify-content: flex-end; align-items: flex-end; background-size: cover; background-position: center center; background-repeat: no-repeat; overflow: hidden;  }
+
+/* ------------------------------------------------------------ *\
+	photos
+\* ------------------------------------------------------------ */
+
+.photos .photos__row { position: relative; width: 100vw; max-width: 100%; display: flex; flex-wrap: nowrap; justify-content: flex-start; align-items: flex-start; overflow: hidden; }
+.photos .photos__row + .photos__row .photo { border-top: 1px solid #fff; }
+
+.photos .photos__col { max-width: 100%; flex: 1 1 auto; display: flex; flex-flow: column; overflow: hidden; }
+.photos .photos__col .photos__row { width: 100%; }
+.photos .photos__col > .photo { min-width: 100%; }
+.photos .photos__col > .photo + .photo { border-top: 1px solid #fff; }
+
+/*.photo { background: yellow !important; border-color: black !important; }*/

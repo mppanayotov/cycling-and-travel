@@ -1,0 +1,29 @@
+/* ------------------------------------------------------------ *\
+	Wrapper
+\* ------------------------------------------------------------ */
+
+.wrapper { margin-top: -2px; min-height: 100vh; position: relative; background-repeat: repeat; background-attachment: fixed; background-size: 27.76vw; overflow: hidden; }
+
+.wrapper--landing  { display: flex; align-items: center; margin-top: 0; background-repeat: no-repeat; background-image: url(../images/temp/home-background.jpg); background-size: calc(100% + 1px) calc(100% + 1px); }
+.wrapper--landing:before { content: ''; display: block; position: absolute; left: 0; right: 0; bottom: 0; top: 0; box-shadow: 0 0 30vw rgba(0,0,0,0.7) inset; z-index: 1;  }
+.wrapper--landing .main-home { margin: auto; }
+
+/*Wrapper for chapter 3*/
+.wrapper--chapter-3 { background: none !important;  }
+
+/*Wrapper for chapter 4*/
+.wrapper--chapter-4 { background: none !important; color: #232525; }
+.wrapper--chapter-4 ul,
+.wrapper--chapter-4 ol,
+.wrapper--chapter-4 p { margin-bottom: 0; }
+.wrapper--chapter-4 ul,
+.wrapper--chapter-4 ol { list-style-type: none; }
+
+$breakpoint-tablet-portrait {
+	.wrapper--landing  { background-image: url(../images/temp/home-background-tablet.jpg); }
+	.wrapper--landing:before  { box-shadow: 0 0 30vw rgba(0,0,0,0.3) inset; }
+}
+
+$breakpoint-mobile {
+	.wrapper--landing  { background-image: url(../images/temp/home-background-mobile.jpg); }
+}

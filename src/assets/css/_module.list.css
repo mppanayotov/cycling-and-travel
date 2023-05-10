@@ -1,0 +1,177 @@
+/* ------------------------------------------------------------ *\
+	List
+\* ------------------------------------------------------------ */
+
+.list,
+[class^="list-"] { list-style: none outside none; }
+
+/* ------------------------------------------------------------ *\
+	list-numbers
+\* ------------------------------------------------------------ */
+
+.list-numbers { background-size: 100% auto; background-repeat: no-repeat; background-position: center; margin: 0 9vw 0 4.75vw; height: 45vw; display: flex; align-items: flex-end; flex-wrap: wrap; padding-left: 12.7%; padding-bottom: 7.96vw; }
+.list-numbers li { display: inline-block; width: 21%; margin-left: 22.5%; }
+.list-numbers li:first-of-type { margin-left: 0; width: 22%; }
+.list-numbers li:last-of-type { width: 17%; margin-right: -5%; }
+.list-numbers h6 + h6 { margin-top: 2.79vw; }
+
+/* ------------------------------------------------------------ *\
+	list-foods
+\* ------------------------------------------------------------ */
+
+.list-foods { position: relative; min-height: 83.33vw; font-weight: 500; font-size: 2.34vw; }
+.list-foods li { position: absolute; }
+.list-foods li:first-child { top: 15.29vw; left: 6.25vw; }
+.list-foods li:nth-child(2) { top: 1.21vw; right: 34.08vw; }
+.list-foods li:nth-child(3) { top: 14.85vw; right: 13.42vw; }
+.list-foods li:nth-child(4) { bottom: 20.25vw; right: 5.13vw; }
+.list-foods li:nth-child(5) { bottom: -1.29vw; right: 32.92vw; }
+.list-foods li:nth-child(6) { bottom: 18.75vw; left: 16.92vw; }
+
+/* ------------------------------------------------------------ *\
+	list-images
+\* ------------------------------------------------------------ */
+
+.list-images { padding-top: 11.02vw; display: flex; flex-flow: row-reverse; margin-right: 5.58vw; }
+.list-images li { display: inline-block; margin: 0 -3.5vw; }
+.list-images li:nth-child(2) { margin-top: 0.63vw; }
+.list-images li:nth-child(3) { margin-top: 3.67vw; margin-left: -6.5vw; }
+.list-images li:nth-child(1) { margin-top: 4.17vw; margin-left: -5.42vw; }
+.list-images + .list-images { padding-top: 2.17vw; margin-right: 13.83vw; }
+.list-images + .list-images li:nth-child(3) { margin-top: 3.33vw; margin-left: -9.67vw; }
+.list-images + .list-images li:nth-child(2) { margin-left: -2.63vw; margin-top: 0.83vw; }
+.list-images + .list-images li:nth-child(1) { margin-top: 5.5vw; margin-left: -4.58vw; }
+
+/* ------------------------------------------------------------ *\
+	list-stars
+\* ------------------------------------------------------------ */
+
+.list-stars li { padding-left: 1.33vw; position: relative; }
+.list-stars li:before { content: '*'; position: absolute; top: 0; left: 0; }
+
+/* ------------------------------------------------------------ *\
+	list-pins
+\* ------------------------------------------------------------ */
+
+.list-pins { font-family: $hand; letter-spacing: 0.06vw; min-height: 108.33vw; background-repeat: no-repeat; position: relative; text-align: left; margin-top: 6.58vw; margin-left: 0.83vw; margin-bottom: 8.33vw; } 
+.list-pins li { position: absolute; padding-left: 3.33vw; opacity: 0; visibility: hidden; transform: scale(0); transition: opacity .3s 1s, visibility .3s 1s, transform .3s 1s; } 
+.list-pins.aos-animate li { opacity: 1; visibility: visible; transform: scale(1); } 
+.list-pins li:nth-child(1) { top: 15.83vw; right: 7vw; } 
+.list-pins li:nth-child(2) { top: calc(50% - 1.33vw); right: 1.67vw; } 
+.list-pins li:nth-child(3) { bottom: 9.17vw; right: 15.58vw; } 
+.list-pins li:nth-child(4) { bottom: -0.25vw; left: 35.67vw; } 
+.list-pins li:nth-child(5) { top: calc(50% - 3vw); left: 2.17vw; } 
+.list-pins li:nth-child(6) { top: 7.5vw; left: 2.67vw; } 
+.list-pins li:nth-child(7) { top: -3vw; left: 37vw; }  
+.list-pins li i { position: absolute; top: -3.79vw; left: 0; } 
+
+/* ------------------------------------------------------------ *\
+	list-pinsalt
+\* ------------------------------------------------------------ */
+
+.list-pinsalt { position: relative;  font-family: $hand; font-size: 1.57vw; letter-spacing: 0.08vw; } 
+.list-pinsalt li { position: absolute; } 
+.list-pinsalt i { position: absolute; top: 0; left: 0; } 
+.list-pinsalt span { position: absolute; top: 0; left: 0; } 
+
+
+/* ------------------------------------------------------------ *\
+	list-home
+\* ------------------------------------------------------------ */
+
+.list-home { position: relative; display: block; font-family: $hand; font-size: 1.25vw; color: #646159; white-space: nowrap; }
+.list-home li { position: absolute;	width: 100%; height: 100%; z-index: 10; pointer-events: none; } 
+.list-home li i { position: relative; width: 3.86%; height: 6.1%; } 
+.list-home a { position: absolute; pointer-events: all; text-decoration: none; transition: color .2s ease-in-out; }
+.list-home a:hover { color: #393630; } 
+.list-home li:nth-child(1) { top: 30.55%; left: 46.4%; z-index: 14; }
+.list-home li:nth-child(1) a { top: 4%; left: 3.3%; }
+.list-home li:nth-child(2) { top: 26.7%; left: 47.3%; z-index: 13; }
+.list-home li:nth-child(2) a { top: 2.6%; left: 3.3%; }
+.list-home li:nth-child(3) { top: 26.2%; left: 45.4%; z-index: 12; }
+.list-home li:nth-child(3) a { top: -3.3%; left: 1.1%;  }
+.list-home li:nth-child(4) { top: 36.7%; left: 81.6%; z-index: 14; }
+.list-home li:nth-child(4) a { top: 3.9%; left: 3.5%; }
+.list-home li:nth-child(5) { top: 26.5%; left: 14.7%; }  
+.list-home li:nth-child(5) a { top: 3.9%; left: 2%; } 
+.list-home li:nth-child(6) { top: 34.8%; left: 44.7%; z-index: 14;  }
+.list-home li:nth-child(6) a { top: 4.6%; left: 3%; }
+
+@media (min-aspect-ratio: 16/9) and (min-width: calc($responsive-sm + 1px)) {
+	.list-home  { font-size: 2.226vh; }
+}
+
+$breakpoint-tablet-portrait {
+	.list-home { font-size: 2.5vw; }
+	.list-home li { position: relative; top: auto; left: auto; margin: 0 0 2.3vw 0; }
+	.list-home li,
+	.list-home li a,
+	.list-home li:nth-child(1),
+	.list-home li:nth-child(1) a,
+	.list-home li:nth-child(2),
+	.list-home li:nth-child(2) a,
+	.list-home li:nth-child(3),
+	.list-home li:nth-child(3) a,
+	.list-home li:nth-child(4),
+	.list-home li:nth-child(4) a,
+	.list-home li:nth-child(5),
+	.list-home li:nth-child(5) a,
+	.list-home li:nth-child(6),
+	.list-home li:nth-child(6) a { position: relative; top: auto; left: auto; }
+	.list-home li i { width: 6.36vw; height: 5.73vw; margin-right: 1vw; }
+	.list-home .soon { margin-top: -2%; margin-left: 25%; display: block; }
+}
+
+$breakpoint-mobile {
+	.list-home { padding: 0 5.8vw; font-size: 5.58vw; }
+	.list-home li { display: flex; align-items: center;  margin: 0 0 3.45vw 0; }
+	.list-home li i { width: 16.3vw; height: 14.2vw; margin-right: 3vw; }
+	.list-home li a { margin-top: 1.1vw;  }
+	.list-home li:nth-child(6) { align-items: flex-start; }
+	.list-home li:nth-child(6) a { padding-top: 4%; }
+	.list-home .soon  { margin-top: 8%; margin-left: 4%; }
+}
+
+/* ------------------------------------------------------------ *\
+	list-compare
+\* ------------------------------------------------------------ */
+
+.list-compare { display: flex; justify-content: space-between; font-family: 'Roboto'; font-size: 1.88vw; list-style-type: none; }
+.list-compare li + li { margin-right: 2.33vw; }
+.list-compare p { margin-bottom: 0; }
+.list-compare p + p { margin-top: 2.5vw; }
+
+/* ------------------------------------------------------------ *\
+	list-dot
+\* ------------------------------------------------------------ */
+
+.list-dot { padding-left: 0.3vw;  font-size: 1.25vw; }
+.list-dot li { position: relative; padding-left: 0.83vw; }
+.list-dot li + li { margin-top: 1.1vw; }
+.list-dot li:before { content: ''; display: block;  position: absolute; left: 0; top: 0.45vw; width: 0.31vw; height: 0.31vw; border-radius: 50%; background-color: #fefc00; }
+
+/* ------------------------------------------------------------ *\
+	list-hyphen
+\* ------------------------------------------------------------ */
+
+.list-hyphen li  { position: relative; padding-left: .83vw; }
+.list-hyphen li:before { content: '-'; display: block; position: absolute; left: 0; top: 0; }
+
+/* ------------------------------------------------------------ *\
+	list-check
+\* ------------------------------------------------------------ */
+
+.list-check li { position: relative; padding-left: 2.45vw; }
+.list-check li:before { content: ''; position: absolute; top: 0.35vw; left: .05vw; width: 1.67vw; height: 1.67vw;  background-image: url(../images/temp/check.png); background-size: 1.67vw 1.67vw; }
+
+/* ------------------------------------------------------------ *\
+	list-chart
+\* ------------------------------------------------------------ */
+
+.list-chart { line-height: 1.3; }
+.list-chart li { position: relative; padding-left: 1.7vw; }
+.list-chart li + li { margin-top: 1vw; }
+.list-chart li:before { content: ''; position: absolute; }
+.list-chart .alt { padding-left: 0; }
+.list-chart .pro:before  { top: -0.1vw; left: 0; width: 1.35vw; height: 1.35vw; background-image: url(../images/temp/icon-donut-green.png); background-size: 1.35vw 1.35vw; }
+.list-chart .con:before  { top: -0.1vw; left: -0.2vw; width: 1.67vw; height: 1.67vw; background-image: url(../images/temp/icon-cross-red.png); background-size: 1.67vw 1.67vw; }

@@ -1,0 +1,16 @@
+/* ------------------------------------------------------------ *\
+	Frame
+\* ------------------------------------------------------------ */
+
+.frame { padding: 0.54vw; background-color: #fff; }
+.frame img { width: 100%; }
+
+/* ------------------------------------------------------------ *\
+	frame-alt
+\* ------------------------------------------------------------ */
+
+.frame-alt { padding: 1.56vw 1.46vw 1.655vw 1.46vw; background-color: #fff; box-shadow: 0 0 40px 10px rgba(0,0,0,.4); }
+.frame-alt .photos { width: 100%; }
+.frame-alt .photos + .label-frame { margin-top: 2.3vw; }
+.frame-alt .photos + .article-frame { margin-top: 4.7vw; }
+.frame-alt .article-frame + .article-frame  { margin-top: 3.65vw; }

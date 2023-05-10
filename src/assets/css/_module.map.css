@@ -1,0 +1,529 @@
+/* ------------------------------------------------------------ *\
+	Map
+\* ------------------------------------------------------------ */
+
+.map { position: relative; width: 23.75vw; }
+.map > img { width: 100%; margin-left: -1.05vw; }
+.map .labels-map { position: absolute; left: 0; top: 0; width: 100%; height: 100%; }
+
+/* ------------------------------------------------------------ *\
+	Map Japan overview
+\* ------------------------------------------------------------ */
+
+.map-japan-overview { position: relative; width: 100vw; max-width: 100%; height: 58.97vw; overflow: visible; }
+.map-japan-overview .map__inner { position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 2; }
+.map-japan-overview .map__image { position: absolute; opacity: 0; transition: opacity .2s ease-out; }
+.map-japan-overview.aos-animate .map__image { opacity: 1; }
+.map-japan-overview .map__image--gallery-map-5 { top: -14.5vw; left: 15.55vw; width: 70.21vw; } 
+.map-japan-overview .map__image--alex-japan { left: 35.3vw; top: 15.2vw; width: 36.88vw; transition-delay: 0.5s; }
+.map-japan-overview .map__image--gallery-map-5-route-1 { top: -8.85vw; left: 35.3vw; width: 46.41vw; transition-delay: 1s; }
+.map-japan-overview .map__image--gallery-map-5-rating-1 { left: 0; top: 9.3vw; width: 34.17vw; transition-delay: 1.5s; }
+.map-japan-overview .map__image--gallery-map-5-route-2 { top: 19.25vw; left: 22.15vw; width: 28.85vw; transition-delay: 2s; }
+.map-japan-overview .map__image--gallery-map-5-dot { width: 1.51vw; top: 18.75vw; left: 48.95vw; transition-delay: 2s; }
+.map-japan-overview .map__image--gallery-map-5-rating-2 { right: 0; top: 27vw; width: 34.38vw; transition-delay: 2.5s; }
+.map-japan-overview .map__image--map-fade-1 { width: 100vw; top: -10vw; z-index: 1; }
+.map-japan-overview .map__image--map-fade-2 { width: 100vw; bottom: 15vw; transform: scaleY(-1); z-index: 1; }
+.map-japan-overview .map__image--map-fade-3 { width: 100vw; bottom: 9vw; transform: scaleY(-1); z-index: 1; }
+.map-japan-overview .map__image--map-fade-4 { width: 100vw; bottom: -10vw; transform: scaleY(-1); z-index: 1; }
+
+/* ------------------------------------------------------------ *\
+	Map-home
+\* ------------------------------------------------------------ */
+
+.map-home { position: relative; }
+.map-home .map__image { width: 100%; }
+.map-home .map__label { position: absolute; width: 78.91vw; }
+
+$breakpoint-tablet-portrait {
+	.map-home .map__image { margin-top: 3.2vw; filter: brightness(86%); }
+	.map-home .map__label { top: 14.2vw; left: 10.5vw; z-index: 1; }
+}
+
+$breakpoint-mobile {
+	.map-home .map__image { margin-top: -3vw; filter: brightness(66.6666%); }
+	.map-home .map__label { width: 90.7vw; top: 14.5vw; left: 4.4vw; }
+}
+
+/* ------------------------------------------------------------ *\
+	map-canada
+\* ------------------------------------------------------------ */
+
+.map-canada { position: relative; width: 100vw; padding-top: 64.84vw; }
+.map-canada .map__image { position: absolute; transition: opacity .4s ease-out; opacity: 0; }
+.map-canada .map__image img { max-width: none; }
+
+.map-canada .map__image--1 { left: 6.6%; top: 0%; }
+.map-canada .map__image--2 { left: 34.4%; top: 42.7%; }
+.map-canada .map__image--3 { left: 40.95%; top: 63.9%; }
+.map-canada .map__image--4 { left: 46.55%; top: 75.45%; }
+
+.map-canada .list-pinsalt { position: absolute; left: 0; top: 0; width: 100%; height: 100%; }
+.map-canada .list-pinsalt span { top: 6.7%; left: 2.9%; pointer-events: auto; opacity: 0; transition: .2s ease-out; }
+.map-canada .list-pinsalt li { width: 100%; height: 100%; pointer-events: none; }
+.map-canada .list-pinsalt li i { opacity: 0; transform: translateY(-100%); transition: .2s ease-out; }
+.map-canada .list-pinsalt li:before { content: ''; position: absolute; left: 2.2vw; top: 5.5vw; border-radius: 50%; width: 1px; height: 1px; box-shadow: 0 0 0 0.234375vw rgba(108,108,108,.5); opacity: 0; transform: scale(0); transition: .2s ease-out; }
+
+.map-canada .list-pinsalt li:nth-child(1) { top: 77.4%; left: 80%; z-index: 1; }
+.map-canada .list-pinsalt li:nth-child(2) { top: 75.2%; left: 58.4%; z-index: 1; }
+.map-canada .list-pinsalt li:nth-child(3) { top: 19%; left: 25.2%; }
+.map-canada .list-pinsalt li:nth-child(3) span { top: 6%; }
+.map-canada .list-pinsalt li:nth-child(4) { top: 39%; left: 36.6%; }
+.map-canada .list-pinsalt li:nth-child(4) span { top: 6.3%; left: 3.2%; }
+.map-canada .list-pinsalt li:nth-child(5) { top: 68%; left: 49.7%; }
+.map-canada .list-pinsalt li:nth-child(6) { top: 70.4%; left: 39%; }
+.map-canada .list-pinsalt li:nth-child(6) span { top: 6%; }
+.map-canada .list-pinsalt li:nth-child(7) { top: 93.4%; left: 50.7%; }
+.map-canada .list-pinsalt li:nth-child(8) { top: 71.9%; left: 58.3%; }
+.map-canada .list-pinsalt li:nth-child(8):before { display: none; }
+.map-canada .list-pinsalt li:nth-child(9) { top: 85%; left: 63%; }
+.map-canada .list-pinsalt li:nth-child(9) span { top: 9.7%; left: 1.7%; }
+.map-canada .list-pinsalt li:nth-child(10) { top: 89.8%; left: 80.65%; }
+.map-canada .list-pinsalt li:nth-child(10) span { top: 6.5%; }
+.map-canada .list-pinsalt li:nth-child(11) { top: 73.8%; left: 79.85%; }
+.map-canada .list-pinsalt li:nth-child(11):before { display: none; }
+
+.map-canada.aos-animate .map__image { opacity: 1; }
+.map-canada.aos-animate .list-pinsalt span { opacity: 1; }
+.map-canada.aos-animate .list-pinsalt li:before { transform: scale(1); opacity: 1; }
+.map-canada.aos-animate .list-pinsalt li i { transform: translateY(0); opacity: 1; }
+
+.map-canada.aos-animate .map__image--1 { transition-delay: 1s; }
+.map-canada.aos-animate .map__image--2 { transition-delay: 1.4s; }
+.map-canada.aos-animate .map__image--3 { transition-delay: 1.8s; }
+.map-canada.aos-animate .map__image--4 { transition-delay: 2.2s; }
+
+.map-canada.aos-animate .list-pinsalt li:nth-child(1):before { transition-delay: 3.1s; }
+.map-canada.aos-animate .list-pinsalt li:nth-child(1) i { transition-delay: 3.3s; }
+.map-canada.aos-animate .list-pinsalt li:nth-child(1) span { transition-delay: 3.6s; }
+.map-canada.aos-animate .list-pinsalt li:nth-child(2):before { transition-delay: 3.3s; }
+.map-canada.aos-animate .list-pinsalt li:nth-child(2) i { transition-delay: 3.5s; }
+.map-canada.aos-animate .list-pinsalt li:nth-child(2) span { transition-delay: 3.8s; }
+.map-canada.aos-animate .list-pinsalt li:nth-child(3):before { transition-delay: 3.5s; }
+.map-canada.aos-animate .list-pinsalt li:nth-child(3) i { transition-delay: 3.7s; }
+.map-canada.aos-animate .list-pinsalt li:nth-child(3) span { transition-delay: 4s; }
+.map-canada.aos-animate .list-pinsalt li:nth-child(4):before { transition-delay: 3.7s; }
+.map-canada.aos-animate .list-pinsalt li:nth-child(4) i { transition-delay: 3.9s; }
+.map-canada.aos-animate .list-pinsalt li:nth-child(4) span { transition-delay: 4.2s; }
+.map-canada.aos-animate .list-pinsalt li:nth-child(5):before { transition-delay: 3.9s; }
+.map-canada.aos-animate .list-pinsalt li:nth-child(5) i { transition-delay: 4.1s; }
+.map-canada.aos-animate .list-pinsalt li:nth-child(5) span { transition-delay: 4.4s; }
+.map-canada.aos-animate .list-pinsalt li:nth-child(6):before { transition-delay: 4.1s; }
+.map-canada.aos-animate .list-pinsalt li:nth-child(6) i { transition-delay: 4.3s; }
+.map-canada.aos-animate .list-pinsalt li:nth-child(6) span { transition-delay: 4.6s; }
+.map-canada.aos-animate .list-pinsalt li:nth-child(7):before { transition-delay: 4.3s; }
+.map-canada.aos-animate .list-pinsalt li:nth-child(7) i { transition-delay: 4.5s; }
+.map-canada.aos-animate .list-pinsalt li:nth-child(7) span { transition-delay: 4.8s; }
+.map-canada.aos-animate .list-pinsalt li:nth-child(8):before { transition-delay: 4.5s; }
+.map-canada.aos-animate .list-pinsalt li:nth-child(8) i { transition-delay: 4.7s; }
+.map-canada.aos-animate .list-pinsalt li:nth-child(8) span { transition-delay: 5s; }
+.map-canada.aos-animate .list-pinsalt li:nth-child(9):before { transition-delay: 4.7s; }
+.map-canada.aos-animate .list-pinsalt li:nth-child(9) i { transition-delay: 4.9s; }
+.map-canada.aos-animate .list-pinsalt li:nth-child(9) span { transition-delay: 5.2s; }
+.map-canada.aos-animate .list-pinsalt li:nth-child(10):before  { transition-delay: 4.9s; }
+.map-canada.aos-animate .list-pinsalt li:nth-child(10) i { transition-delay: 5.1s; }
+.map-canada.aos-animate .list-pinsalt li:nth-child(10) span { transition-delay: 5.4s; }
+.map-canada.aos-animate .list-pinsalt li:nth-child(11):before  { transition-delay: 5.1s; }
+.map-canada.aos-animate .list-pinsalt li:nth-child(11) i { transition-delay: 5.3s; }
+.map-canada.aos-animate .list-pinsalt li:nth-child(11) span { transition-delay: 5.6s; }
+
+/* ------------------------------------------------------------ *\
+	map-park
+\* ------------------------------------------------------------ */
+
+.map-park { position: relative; }
+.map-park .map__poster { position: absolute; top: 0; left: 0; width: 100vw; pointer-events: none; }
+.map-park .map__poster img { width: 100%; max-width: none; display: block; }
+.map-park .map__image { position: absolute; transform: scale(1.3); opacity: 0; transition: transform .5s ease-out, opacity .5s ease-out; }
+.map-park .map__image img { width: 100%; max-width: none; display: block; }
+.map-park .map__route { position: absolute; transform: scale(1.05); opacity: 0; transition: transform .5s ease-out, opacity .5s ease-out; }
+.map-park .map__route img { width: 100%; max-width: none; display: block; }
+.map-park .map__pins { position: absolute; top: 0; left: 0; }
+.map-park .map__pin { position: absolute; }
+.map-park .map__label { position: absolute; font-family: $hand; font-size: 1.25vw; color: #fff; text-shadow: 0 0 0.26vw rgba(89,89,89,1), 0 0 0.26vw rgba(89,89,89,1), 0 0 0.26vw rgba(89,89,89,1), 0 0 0.26vw rgba(89,89,89,1); white-space: nowrap; letter-spacing: 0.07em; opacity: 0; transition: transform .5s ease-out, opacity .5s ease-out; }
+
+.map-park .map__icon { width: 8.54vw; transform: translateY(-100%); opacity: 0; transition: opacity .3s ease-out, transform .3s ease-out; }
+.map-park .map__icon img { width: 100%; max-width: none; display: block; }
+.map-park .map__icon--blue { width: 8.54vw; height: 10.1vw; }
+.map-park .map__icon--orange { width: 8.54vw; height: 10.21vw; }
+.map-park .map__icon--green { width: 8.49vw; height: 10.1vw; }
+.map-park .map__icon--yellow { width: 8.54vw; height: 10.21vw; }
+.map-park .map__icon--purple { width: 8.54vw; height: 10.1vw; }
+
+.map-park.aos-animate .map__image { transform: scale(1); opacity: 1; }
+.map-park.aos-animate .map__icon { transform: translateY(0); opacity: 1; }
+.map-park.aos-animate .map__label { opacity: 1; }
+.map-park.aos-animate .map__route { transform: scale(1); opacity: 1; transition-delay: 3.8s; }
+
+.map-park.aos-animate .map__icon--blue { transition-delay: 1s; }
+.map-park.aos-animate .map__icon--orange { transition-delay: 1.4s; }
+.map-park.aos-animate .map__icon--green { transition-delay: 1.8s; }
+.map-park.aos-animate .map__icon--yellow { transition-delay: 2.2s; }
+.map-park.aos-animate .map__icon--purple { transition-delay: 2.6s; }
+
+.map-park.aos-animate .map__pin--blue .map__label { transition-delay: 1.4s; }
+.map-park.aos-animate .map__pin--orange .map__label { transition-delay: 1.8s; }
+.map-park.aos-animate .map__pin--green .map__label { transition-delay: 2.2s; }
+.map-park.aos-animate .map__pin--yellow .map__label { transition-delay: 2.6s; }
+.map-park.aos-animate .map__pin--purple .map__label { transition-delay: 3s; }
+
+/*  map-park--1  */
+.map-park--1 { padding-top: 86.5vw; }
+.map-park--1 .map__image { top: -6vw; left: 5.45vw; width: 95.99vw; }
+.map-park--1 .map__poster { top: -56.4vw; }
+.map-park--1 .map__route { top: 39.2vw; left: 55.2vw; width: 21.61vw; }
+
+.map-park--1 .map__pin--1 { top: 25.8vw; left: 51.8vw; }
+.map-park--1 .map__pin--1 .map__label { top: 2.6vw; left: 6.6vw; }
+
+.map-park--1 .map__pin--2 { top: 26.2vw; left: 49vw; }
+.map-park--1 .map__pin--2 .map__label { top: 3.7vw; left: -7.6vw; }
+
+.map-park--1 .map__pin--3 { top: 26.5vw; left: 49.1vw; }
+.map-park--1 .map__pin--3 .map__label { top: 5.7vw; left: -7vw; }
+
+.map-park--1 .map__pin--4 { top: 27.45vw; left: 49.95vw; }
+.map-park--1 .map__pin--4 .map__label { top: 6.8vw; left: -7vw; }
+
+.map-park--1 .map__pin--5 { top: 28.15vw; left: 57.05vw; }
+.map-park--1 .map__pin--5 .map__label { top: 6.2vw; left: 5.6vw; }
+
+.map-park--1 .map__pin--6 { top: 32.5vw; left: 51.65vw; }
+.map-park--1 .map__pin--6 .map__label { top: 6.2vw; left: -11vw; }
+
+.map-park--1 .map__pin--7 { top: 35.1vw; left: 61.65vw; }
+.map-park--1 .map__pin--7 .map__label { top: 6.2vw; left: 5.6vw; }
+
+.map-park--1 .map__pin--8 { top: 38vw; left: 54.85vw; }
+.map-park--1 .map__pin--8 .map__label { top: 6vw; left: -7.4vw; }
+
+.map-park--1 .map__pin--9 { top: 44.5vw; left: 61.1vw; }
+.map-park--1 .map__pin--9 .map__label { top: 6vw; left: -6.9vw; }
+
+.map-park--1 .map__pin--10 { top: 46.85vw; left: 66.55vw; }
+
+.map-park--1 .map__pin--11 { top: 54.55vw; left: 70.05vw; }
+.map-park--1 .map__pin--11 .map__label { top: 4.2vw; left: -15.8vw; }
+
+.map-park--1 .map__pin--12 { top: 55.8vw; left: 71.2vw; }
+.map-park--1 .map__pin--12 .map__label { top: 5.8vw; left: -3.3vw; }
+
+.map-park--1 .map__pin--13 { top: 57.3vw; left: 71.95vw; }
+.map-park--1 .map__pin--13 .map__label { top: 6.8vw; left: -7.6vw; }
+
+.map-park--1 .map__pin--14 { top: 57.35vw; left: 72.55vw; }
+.map-park--1 .map__pin--14 .map__label { top: 4.1vw; left: 6.55vw; }
+
+
+/*  map-park--2  */
+.map-park--2 { padding-top: 97.3vw; }
+.map-park--2 .map__image { top: -7.05vw; left: -2.3vw; width: 82.86vw; }
+.map-park--2 .map__poster { top: -2.4vw; }
+.map-park--2 .map__route--1 { top: 43.15vw; left: 40.25vw; width: 9.74vw; }
+.map-park--2 .map__route--2 { top: 57.5vw; left: 61.6vw; width: 10.47vw; }
+.map-park--2 .map__route--3 { top: 65.95vw; left: 66.25vw; width: 5.0525vw; }
+
+.map-park--2 .map__pin--1 { top: 7.25vw; left: 16.65vw; }
+.map-park--2 .map__pin--1 .map__label { top: 6.15vw; left: 5.5vw; }
+
+.map-park--2 .map__pin--2 { top: 13.5vw; left: 22vw; }
+.map-park--2 .map__pin--2 .map__label { top: 6.1vw; left: 5.3vw; }
+
+.map-park--2 .map__pin--3 { top: 25.3vw; left: 29.05vw; }
+.map-park--2 .map__pin--3 .map__label { top: 2.8vw; left: 6.6vw; }
+
+.map-park--2 .map__pin--4 { top: 26.3vw; left: 29.75vw; }
+.map-park--2 .map__pin--4 .map__label { top: 6.1vw; left: 5.5vw; }
+
+.map-park--2 .map__pin--5 { top: 35.4vw; left: 37.3vw; }
+.map-park--2 .map__pin--5 .map__label { top: 4vw; left: 6.5vw; }
+
+.map-park--2 .map__pin--6 { top: 36.5vw; left: 35.15vw; }
+.map-park--2 .map__pin--6 .map__label { top: 6.2vw; left: -5.1vw; }
+
+.map-park--2 .map__pin--7 { top: 37.4vw; left: 36.75vw; }
+.map-park--2 .map__pin--7 .map__label { top: 7.6vw; left: -11.9vw; }
+
+.map-park--2 .map__pin--8 { top: 41.1vw; left: 40.5vw; }
+.map-park--2 .map__pin--8 .map__label { top: 6.2vw; left: -8.1vw; }
+
+.map-park--2 .map__pin--9 { top: 44.5vw; left: 45.1vw; }
+.map-park--2 .map__pin--9 .map__label { top: 6.1vw; left: -7.8vw; }
+
+.map-park--2 .map__pin--10 { top: 43.3vw; left: 56.9vw; }
+.map-park--2 .map__pin--10 .map__label { top: 2.9vw; left: 6.4vw; }
+
+.map-park--2 .map__pin--11 { top: 44.35vw; left: 54.65vw; }
+.map-park--2 .map__pin--11 .map__label { top: 5.1vw; left: 7.8vw; }
+
+.map-park--2 .map__pin--12 { top: 44.55vw; left: 52.95vw; }
+.map-park--2 .map__pin--12 .map__label { top: -0.9vw; left: -0.5vw; }
+
+.map-park--2 .map__pin--13 { top: 46.3vw; left: 55.05vw; }
+.map-park--2 .map__pin--13 .map__label { top: 5.7vw; left: 5.8vw; }
+
+.map-park--2 .map__pin--14 { top: 47.2vw; left: 52.25vw; }
+.map-park--2 .map__pin--14 .map__label { top: 7vw; left: -5.25vw; }
+
+.map-park--2 .map__pin--15 { top: 48.05vw; left: 53.15vw; }
+.map-park--2 .map__pin--15 .map__label { top: 0vw; left: 0vw; }
+
+.map-park--2 .map__pin--16 { top: 48.55vw; left: 54.05vw; }
+.map-park--2 .map__pin--16 .map__label { top: 7.7vw; left: -3.3vw; }
+
+.map-park--2 .map__pin--17 { top: 51vw; left: 58.2vw; }
+.map-park--2 .map__pin--17 .map__label { top: 7.5vw; left: 2.6vw; }
+
+.map-park--2 .map__pin--18 { top: 54vw; left: 66.35vw; }
+.map-park--2 .map__pin--18 .map__label { top: 6.2vw; left: 5.7vw; }
+
+.map-park--2 .map__pin--19 { top: 59.05vw; left: 63.65vw; }
+.map-park--2 .map__pin--19 .map__label { top: 6.2vw; left: 5.5vw; }
+
+.map-park--2 .map__pin--20 { top: 71vw; left: 66.5vw; }
+.map-park--2 .map__pin--20 .map__label { top: 6.1vw; left: 5.5vw; }
+
+/*  map-park--3  */
+.map-park--3 { padding-top: 99.6vw; }
+.map-park--3 .map__image { top: 10.45vw; left: 44.85vw; width: 54.74vw; }
+.map-park--3 .map__poster { top: -2.4vw; }
+.map-park--3 .map__route { top: 38.45vw; left: 46.75vw; width: 30.83vw; }
+
+.map-park--3 .map__pin--1 { top: 31.75vw; left: 68.25vw; }
+.map-park--3 .map__pin--1 .map__label { top: 6.15vw; left: -6.6vw; }
+
+.map-park--3 .map__pin--2 { top: 32.15vw; left: 75.5vw; }
+.map-park--3 .map__pin--2 .map__label { top: 6.1vw; left: 5.6vw; }
+
+.map-park--3 .map__pin--3 { top: 35.5vw; left: 71.25vw; }
+.map-park--3 .map__pin--3 .map__label { top: 6.2vw; left: 5.7vw; }
+
+.map-park--3 .map__pin--4 { top: 37.45vw; left: 68.2vw; }
+.map-park--3 .map__pin--4 .map__label { top: 6vw; left: -7.2vw; }
+
+.map-park--3 .map__pin--5 { top: 42.35vw; left: 67.55vw; }
+
+.map-park--3 .map__pin--6 { top: 45.45vw; left: 65.75vw; }
+
+.map-park--3 .map__pin--7 { top: 47.9vw; left: 65.1vw; }
+
+.map-park--3 .map__pin--8 { top: 51.6vw; left: 61vw; }
+
+.map-park--3 .map__pin--9 { top: 45.8vw; left: 43vw; }
+.map-park--3 .map__pin--9 .map__label { top: 8vw; left: 2.4vw; }
+
+.map-park--3 .map__pin--10 { top: 45.8vw; left: 43.6vw; }
+
+.map-park--3.aos-animate .map__route { transition-delay: 3s; }
+
+.map-park--3.aos-animate .map__icon--yellow { transition-delay: 1.4s; }
+.map-park--3.aos-animate .map__icon--purple { transition-delay: 1.8s; }
+
+.map-park--3.aos-animate .map__pin--blue .map__label { transition-delay: 1.4s; }
+.map-park--3.aos-animate .map__pin--yellow .map__label { transition-delay: 1.8s; }
+.map-park--3.aos-animate .map__pin--purple .map__label { transition-delay: 2.2s; }
+
+/*  map-park--4  */
+.map-park--4 { padding-top: 95vw; }
+.map-park--4 .map__image { top: -2.15vw; left: 37.75vw; width: 55.57vw; }
+.map-park--4 .map__poster { top: -1.05vw; }
+.map-park--4 .map__route--1 { top: 22.5vw; left: 61.3vw; width: 13.13vw; }
+.map-park--4 .map__route--2 { top: 28.35vw; left: 32.85vw; width: 34.32vw; }
+
+.map-park--4 .map__pin--1 { top: 15.7vw; left: 59.15vw; }
+
+.map-park--4 .map__pin--2 { top: 25.25vw; left: 64vw; }
+
+.map-park--4 .map__pin--3 { top: 33.05vw; left: 68.6vw; }
+.map-park--4 .map__pin--3 .map__label { top: 6vw; left: 5.6vw; }
+
+.map-park--4 .map__pin--4 { top: 38.5vw; left: 63.85vw; }
+
+.map-park--4 .map__pin--5 { top: 52.6vw; left: 69.5vw; }
+
+.map-park--4 .map__pin--6 { top: 58.85vw; left: 71.3vw; }
+.map-park--4 .map__pin--6 .map__label { top: 6.1vw; left: 5.9vw; }
+
+.map-park--4 .map__pin--7 { top: 21.8vw; left: 29.4vw; }
+
+.map-park--4 .map__pin--8 { top: 26.3vw; left: 34.05vw; }
+.map-park--4 .map__pin--8 .map__label { top: 6.2vw; left: -1.6vw; }
+
+.map-park--4 .map__pin--9 { top: 29.9vw; left: 39.45vw; }
+
+.map-park--4 .map__pin--10 { top: 34.1vw; left: 43.55vw; }
+.map-park--4 .map__pin--10 .map__label { top: 6.3vw; left: 5.4vw; }
+
+.map-park--4 .map__pin--11 { top: 41.15vw; left: 48.6vw; }
+
+.map-park--4 .map__pin--12 { top: 47.1vw; left: 52.8vw; }
+.map-park--4 .map__pin--12 .map__label { top: 6.2vw; left: 5.7vw; }
+
+.map-park--4 .map__pin--13 { top: 62.65vw; left: 63.35vw; }
+.map-park--4 .map__pin--13 .map__label { top: 6.1vw; left: 6vw; }
+
+.map-park--4 .map__pin--14 { top: 63.5vw; left: 62.25vw; }
+.map-park--4 .map__pin--14 .map__label { top: 8.1vw; left: -2.9vw; }
+
+.map-park--4.aos-animate .map__route { transition-delay: 3s; }
+
+.map-park--4.aos-animate .map__icon--yellow { transition-delay: 1.4s; }
+.map-park--4.aos-animate .map__icon--purple { transition-delay: 1.8s; }
+
+.map-park--4.aos-animate .map__pin--blue .map__label { transition-delay: 1.4s; }
+.map-park--4.aos-animate .map__pin--yellow .map__label { transition-delay: 1.8s; }
+.map-park--4.aos-animate .map__pin--purple .map__label { transition-delay: 2.2s; }
+
+/*  map-park--5  */
+.map-park--5 { padding-top: 94.75vw; }
+.map-park--5 .map__image { top: -2.15vw; left: 37.75vw; width: 55.57vw; }
+.map-park--5 .map__poster { top: -1.05vw; }
+
+/*  map-park--sub  */
+.map-park--sub .map__icon { position: relative; transform: scale(0);  width: 0.57vw; height: 0.57vw; }
+.map-park--sub .map__icon:before { content: ''; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 2px; height: 2px; border-radius: 100%; background-color: #000; box-shadow: 0 0 0 0.31vw #000, 0 0 0 0.57vw #f8cb00; }
+.map-park--sub .map__label { color: #231f20; text-shadow: none; letter-spacing: 0.07em; }
+.map-park--sub .map__note { position: absolute; transform: translateY(50%); opacity: 0; transition: opacity .3s ease-out, transform .3s ease-out; }
+.map-park--sub .map__note img { width: 100%; max-width: none; display: block; }
+.map-park--sub .map__title { position: absolute; text-transform: uppercase; color: #a4a4a4; font-family: $hand; font-size: 1.3vw; white-space: nowrap; opacity: 0; transition: transform .5s ease-out, opacity .5s ease-out; }
+
+.map-park--sub.aos-animate .map__icon { transform: scale(1); transition-delay: 1s; }
+.map-park--sub.aos-animate .map__label { transition-delay: 1.4s }
+.map-park--sub.aos-animate .map__route { transition-delay: 1.8s; }
+.map-park--sub.aos-animate .map__note { transform: translateY(0); opacity: 1; transition-delay: 2.2s; }
+.map-park--sub.aos-animate .map__title { opacity: 1; transition-delay: 2.2s; }
+
+/*  map-park--sub1  */
+.map-park--sub1 { padding-top: 35.3vw; }
+.map-park--sub1 .map__image { top: 0.3vw; left: 12.95vw; width: 39.64vw; }
+.map-park--sub1 .map__note { top: 4vw; left: 49.7vw; width: 16.51vw; }
+.map-park--sub1 .map__route { top: 18.5vw; left: 33.7vw; width: 11.88vw; }
+
+.map-park--sub1 .map__pin--1 { top: 18.5vw; left: 34vw; }
+.map-park--sub1 .map__pin--1 .map__label { top: -0.3vw; left: -14.95vw; }
+
+.map-park--sub1 .map__pin--2 { top: 21.3vw; left: 35.7vw; }
+.map-park--sub1 .map__pin--2 .map__label { top: -0.2vw; left: -12.05vw; }
+
+.map-park--sub1 .map__pin--3 { top: 30.9vw; left: 44.15vw; }
+.map-park--sub1 .map__pin--3 .map__label { top: -0.7vw; left: 1.55vw; }
+
+.map-park--sub1 .map__pin--4 { top: 31.65vw; left: 44.8vw; }
+.map-park--sub1 .map__pin--4 .map__label { top: 0.45vw; left: -6.95vw; }
+
+.map-park--sub1 .map__pin--5 { top: 32.65vw; left: 45.35vw; }
+.map-park--sub1 .map__pin--5 .map__label { top: -0.35vw; left: 1.55vw; }
+
+/*  map-park--sub2  */
+.map-park--sub2 { padding-top: 49.7vw; }
+.map-park--sub2 .map__image { top: -12.4vw; left: -4.9vw; width: 65.78vw; }
+.map-park--sub2 .map__note { top: 6.25vw; left: 49.75vw; width: 16.51vw; }
+.map-park--sub2 .map__route { top: 26.75vw; left: 29.1vw; width: 6.09vw; }
+
+.map-park--sub2 .map__pin--1 { top: 26vw; left: 29vw; }
+.map-park--sub2 .map__pin--1 .map__label { top: -0.4vw; left: 1.35vw; }
+
+.map-park--sub2 .map__pin--2 { top: 30.15vw; left: 31.6vw; }
+.map-park--sub2 .map__pin--2 .map__label { top: -0.5vw; left: 1.45vw; }
+
+.map-park--sub2 .map__pin--3 { top: 32.2vw; left: 34.9vw; }
+.map-park--sub2 .map__pin--3 .map__label { top: -0.4vw; left: 1.25vw; }
+
+/*  map-park--sub3  */
+.map-park--sub3 { padding-top: 49.7vw; }
+.map-park--sub3 .map__image { top: -12.4vw; left: -4.9vw; width: 65.78vw; }
+.map-park--sub3 .map__note { top: 6.25vw; left: 49.75vw; width: 16.51vw; }
+.map-park--sub3 .map__route { top: 36.95vw; left: 44vw; width: 6.77vw; }
+.map-park--sub3 .map__title { top: 32.55vw; left: 51.25vw; }
+
+.map-park--sub3 .map__pin--1 { top: 37.05vw; left: 43.9vw; }
+.map-park--sub3 .map__pin--1 .map__label { top: -0.4vw; left: -6.65vw; }
+
+.map-park--sub3 .map__pin--2 { top: 38.85vw; left: 49.75vw; }
+.map-park--sub3 .map__pin--2 .map__label { top: -0.2vw; left: 1.25vw; }
+
+.map-park--sub3 .map__pin--3 { top: 42.9vw; left: 47.9vw; }
+.map-park--sub3 .map__pin--3 .map__label { top: 1.3vw; left: -0.35vw; }
+
+/*  map-park--sub4  */
+.map-park--sub4 { padding-top: 52.75vw; }
+.map-park--sub4 .map__image { top: -12.4vw; left: -4.9vw; width: 65.78vw; }
+.map-park--sub4 .map__note { top: 6.25vw; left: 49.75vw; width: 16.51vw; }
+.map-park--sub4 .map__route { top: 42.75vw; left: 47.25vw; width: 2.97vw; }
+.map-park--sub4 .map__title { top: 32.55vw; left: 51.25vw; }
+
+.map-park--sub4 .map__pin--1 { top: 42.85vw; left: 47.9vw; }
+.map-park--sub4 .map__pin--1 .map__label { top: -0.3vw; left: 1.35vw; }
+
+.map-park--sub4 .map__pin--2 { top: 50.85vw; left: 49.9vw; }
+.map-park--sub4 .map__pin--2 .map__label { top: -0.4vw; left: 1.35vw; }
+
+/*  map-park--sub5  */
+.map-park--sub5 { padding-top: 34.65vw; }
+.map-park--sub5 .map__image { top: 0.4vw; left: 23.4vw; width: 20.52vw; }
+.map-park--sub5 .map__note { top: 6.25vw; left: 49.75vw; width: 16.51vw; }
+.map-park--sub5 .map__route { top: 11.25vw; left: 16.15vw; width: 19.9vw; }
+
+.map-park--sub5 .map__pin--1 { top: 11vw; left: 33.5vw; }
+.map-park--sub5 .map__pin--1 .map__label { top: -0.2vw; left: -10.15vw; }
+
+.map-park--sub5 .map__pin--2 { top: 13.8vw; left: 35.65vw; }
+.map-park--sub5 .map__pin--2 .map__label { top: -0.2vw; left: 1.35vw; }
+
+.map-park--sub5 .map__pin--3 { top: 15.05vw; left: 33.5vw; }
+.map-park--sub5 .map__pin--3 .map__label { top: -0.3vw; left: -10.85vw; }
+
+.map-park--sub5 .map__pin--4 { top: 18.2vw; left: 33.15vw; }
+
+.map-park--sub5 .map__pin--5 { top: 22.35vw; left: 31.45vw; }
+
+.map-park--sub5 .map__pin--6 { top: 24.95vw; left: 28.55vw; }
+
+.map-park--sub5 .map__pin--7 { top: 20.8vw; left: 16.05vw; }
+.map-park--sub5 .map__pin--7 .map__label { top: 1.5vw; left: -1.55vw; }
+
+/*  map-park--sub6  */
+.map-park--sub6 { padding-top: 46.05vw; }
+.map-park--sub6 .map__image { top: -12.4vw; left: 9.85vw; width: 46.72vw; }
+.map-park--sub6 .map__note { top: 6.55vw; left: 49.75vw; width: 16.51vw; }
+.map-park--sub6 .map__route { top: 13.15vw; left: 10.85vw; width: 23.44vw; }
+
+.map-park--sub6 .map__pin--1 { top: 3.9vw; left: 3vw; }
+.map-park--sub6 .map__pin--1 .map__label { top: -1.95vw; left: -1.85vw; }
+
+.map-park--sub6 .map__pin--2 { top: 13.15vw; left: 10.65vw; }
+
+.map-park--sub6 .map__pin--3 { top: 16.25vw; left: 13.9vw; }
+.map-park--sub6 .map__pin--3 .map__label { top: -0.75vw; left: 1.55vw; }
+
+.map-park--sub6 .map__pin--4 { top: 18.8vw; left: 17.6vw; }
+
+.map-park--sub6 .map__pin--5 { top: 21.75vw; left: 20.6vw; }
+.map-park--sub6 .map__pin--5 .map__label { top: -0.4vw; left: 1.55vw; }
+
+.map-park--sub6 .map__pin--6 { top: 26.75vw; left: 24.1vw; }
+
+.map-park--sub6 .map__pin--7 { top: 31vw; left: 27.05vw; }
+.map-park--sub6 .map__pin--7 .map__label { top: -0.7vw; left: 1.65vw; }
+
+.map-park--sub6 .map__pin--8 { top: 42vw; left: 33.9vw; }
+.map-park--sub6 .map__pin--8 .map__label { top: -0.2vw; left: 1.45vw; }
+
+/*  map-park--sub7  */
+.map-park--sub7 { padding-top: 45.85vw; }
+.map-park--sub7 .map__image { top: -12.5vw; left: 1.4vw; width: 46.72vw; }
+.map-park--sub7 .map__note { top: 6.45vw; left: 49.75vw; width: 16.51vw; }
+.map-park--sub7 .map__route { top: 9.05vw; left: 22.15vw; width: 8.54vw; }
+
+.map-park--sub7 .map__pin--1 { top: 8.6vw; left: 23.05vw; }
+
+.map-park--sub7 .map__pin--2 { top: 8.55vw; left: 42.25vw; }
+.map-park--sub7 .map__pin--2 .map__label { top: -0.4vw; left: -4.65vw; }
+
+.map-park--sub7 .map__pin--3 { top: 15.2vw; left: 26.45vw; }
+
+.map-park--sub7 .map__pin--4 { top: 20.85vw; left: 29.65vw; }
+.map-park--sub7 .map__pin--4 .map__label { top: -0.4vw; left: 1.45vw; }
+
+.map-park--sub7 .map__pin--5 { top: 24.6vw; left: 26.4vw; }
+
+.map-park--sub7 .map__pin--6 { top: 34.55vw; left: 30.25vw; }

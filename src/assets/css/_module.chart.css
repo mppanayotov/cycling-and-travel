@@ -1,0 +1,185 @@
+/* ------------------------------------------------------------ *\
+	chart
+\* ------------------------------------------------------------ */
+
+.chart { position: relative; padding-top: 38.7vw; }
+.chart .chart__image { position: absolute; transform: scale(.7); opacity: 0; transition: transform .5s ease-out, opacity .5s ease-out; }
+.chart .chart__image img { width: 100%; max-width: none; display: block; }
+.chart .chart__fill { position: absolute; top: 0; left: 0; width: 100%; height: 100%; transform: scale(0); opacity: 0; transition: transform .5s ease-out, opacity .5s ease-out; }
+.chart .chart__fill img { position: absolute; max-width: none; display: block; }
+.chart .chart__dots { position: absolute; top: 0; left: 0; }
+.chart .chart__dot { position: absolute; }
+.chart .chart__icon { position: relative; width: 0.73vw; height: 0.73vw; transform: scale(0); opacity: 0; transition: transform .5s ease-out, opacity .5s ease-out; }
+.chart .chart__icon:before { content: ''; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 2px; height: 2px; border-radius: 100%; background-color: #000; box-shadow: 0 0 0 0.34vw #000; }
+.chart .chart__label { position: absolute; font-family: $hand; font-size: 1.56vw; color: #231f20; white-space: nowrap; letter-spacing: 0.07em; opacity: 0; transition: transform .5s ease-out, opacity .5s ease-out; }
+.chart .list-chart { position: absolute; color: #706e72; font-size: 1.15vw; }
+.chart .list-chart li { opacity: 0; transition: transform .5s ease-out, opacity .5s ease-out; }
+
+.chart.aos-animate .chart__image { transform: scale(1); opacity: 1; }
+.chart.aos-animate .chart__fill { transform: scale(1); opacity: 1; }
+.chart.aos-animate .chart__icon { transform: scale(1); opacity: 1; }
+.chart.aos-animate .chart__label { opacity: 1; }
+.chart.aos-animate .list-chart li { opacity: 1; }
+
+.chart.aos-animate .chart__dot--1 .chart__icon { transition-delay: 0.4s; }
+.chart.aos-animate .chart__dot--2 .chart__icon { transition-delay: 0.8s; }
+.chart.aos-animate .chart__dot--3 .chart__icon { transition-delay: 1.2s; }
+.chart.aos-animate .chart__dot--4 .chart__icon { transition-delay: 1.6s; }
+.chart.aos-animate .chart__dot--5 .chart__icon { transition-delay: 2s; }
+
+.chart.aos-animate .chart__dot--1 .chart__label { transition-delay: 0.8s; }
+.chart.aos-animate .chart__dot--2 .chart__label { transition-delay: 1.2s; }
+.chart.aos-animate .chart__dot--3 .chart__label { transition-delay: 1.6s; }
+.chart.aos-animate .chart__dot--4 .chart__label { transition-delay: 2s; }
+.chart.aos-animate .chart__dot--5 .chart__label { transition-delay: 2.4s; }
+
+.chart.aos-animate .chart__fill { transition-delay: 2.6s; }
+
+/*  chart--five  */
+.chart--five { padding-top: 38.7vw; }
+.chart--five .chart__image { top: 3.9vw; left: 18.9vw; width: 31.15vw; }
+
+.chart--five .chart__dot--1 { top: 3.7vw; left: 34.1vw; }
+.chart--five .chart__dot--1 .chart__label { top: -2.75vw; left: -1.5vw; }
+
+.chart--five .chart__dot--2 { top: 14.4vw; left: 48.85vw; }
+.chart--five .chart__dot--2 .chart__label { top: -0.6vw; left: 2.1vw; }
+
+.chart--five .chart__dot--3 { top: 31.6vw; left: 43.3vw; }
+.chart--five .chart__dot--3 .chart__label { top: 0.35vw; left: 1.8vw; }
+
+.chart--five .chart__dot--4 { top: 31.55vw; left: 25vw; }
+.chart--five .chart__dot--4 .chart__label { top: 0.45vw; left: -7vw; }
+
+.chart--five .chart__dot--5 { top: 14.35vw; left: 19.3vw; }
+.chart--five .chart__dot--5 .chart__label { top: -0.55vw; left: -9.9vw; }
+
+/*  chart--five1  */
+.chart--five1 .chart__fill img { top: 4.5vw; left: 5.05vw; width: 21.09vw; }
+
+/*  chart--five2  */
+.chart--five2 .chart__fill img { top: 1.6vw; left: 2.35vw; width: 21.67vw; }
+
+/*  chart--five3  */
+.chart--five3 .chart__fill img { top: 2.3vw; left: 3.55vw; width: 18.65vw; }
+
+/*  chart--five4  */
+.chart--five4 .chart__fill img { top: 6vw; left: 6.55vw; width: 22.45vw; }
+
+/*  chart--five5  */
+.chart--five5 { padding-top: 38.5vw; }
+.chart--five5 .chart__fill img { top: 5.3vw; left: 8.1vw; width: 16.56vw; }
+
+/*  chart--five6  */
+.chart--five6 { padding-top: 38.5vw; }
+.chart--five6 .chart__fill img { top: 6vw; left: 3.7vw; width: 18.8vw; }
+
+/*  chart--five7  */
+.chart--five7 { padding-top: 38.6vw; }
+.chart--five7 .chart__fill img { top: 4.6vw; left: 5.85vw; width: 19.53vw; }
+
+/*  chart--six  */
+.chart--six { padding-top: 45.45vw; }
+.chart--six .chart__image { top: 5.6vw; left: 18.9vw; width: 31.15vw; }
+
+.chart--six .chart__dot--1 { top: 5.4vw; left: 34.1vw; }
+.chart--six .chart__dot--1 .chart__label { top: -2.85vw; left: -4.8vw; }
+.chart--six .chart__dot--1 .list-chart { top: -4.75vw; left: 6.05vw; width: 29vw; }
+
+.chart--six .chart__dot--2 { top: 13.1vw; left: 47.4vw; }
+.chart--six .chart__dot--2 .chart__label { top: -3.2vw; left: 3.4vw; }
+.chart--six .chart__dot--2 .list-chart { top: -0.4vw; left: 3.45vw; width: 18vw; }
+
+.chart--six .chart__dot--3 { top: 28.45vw; left: 47.4vw; }
+.chart--six .chart__dot--3 .chart__label { top: -2.85vw; left: 3.4vw; }
+.chart--six .chart__dot--3 .list-chart { top: -0.2vw; left: 3.5vw; width: 18vw; }
+
+.chart--six .chart__dot--4 { top: 36.2vw; left: 34.1vw; }
+.chart--six .chart__dot--4 .chart__label { top: 2.15vw; left: -5vw; }
+.chart--six .chart__dot--4 .list-chart { top: 2.25vw; left: 6.05vw; width: 29vw; }
+
+.chart--six .chart__dot--5 { top: 28.45vw; left: 20.8vw; }
+.chart--six .chart__dot--5 .chart__label { top: -3.05vw; left: -21.1vw; }
+.chart--six .chart__dot--5 .list-chart { top: -0.3vw; left: -20.9vw; width: 21vw; }
+
+.chart--six .chart__dot--6 { top: 13.1vw; left: 20.8vw; }
+.chart--six .chart__dot--6 .chart__label { top: -3.1vw; left: -21.1vw; }
+.chart--six .chart__dot--6 .list-chart { top: -0.4vw; left: -20.9vw; width: 19vw; }
+
+.chart--six.aos-animate .chart__dot--6 .chart__icon { transition-delay: 2.4s; }
+.chart--six.aos-animate .chart__dot--6 .chart__label { transition-delay: 2.8s; }
+.chart--six.aos-animate .chart__fill { transition-delay: 3s; }
+
+.chart--six.aos-animate .chart__dot--1 .list-chart li { transition-delay: 3.8s; }
+.chart--six.aos-animate .chart__dot--1 .list-chart li:nth-child(2) { transition-delay: 4s; }
+.chart--six.aos-animate .chart__dot--1 .list-chart li:nth-child(3) { transition-delay: 4.2s; }
+
+.chart--six.aos-animate .chart__dot--2 .list-chart li { transition-delay: 4.2s; }
+.chart--six.aos-animate .chart__dot--2 .list-chart li:nth-child(2) { transition-delay: 4.4s; }
+.chart--six.aos-animate .chart__dot--2 .list-chart li:nth-child(3) { transition-delay: 4.6s; }
+
+.chart--six.aos-animate .chart__dot--3 .list-chart li { transition-delay: 4.6s; }
+.chart--six.aos-animate .chart__dot--3 .list-chart li:nth-child(2) { transition-delay: 4.8s; }
+.chart--six.aos-animate .chart__dot--3 .list-chart li:nth-child(3) { transition-delay: 5s; }
+
+.chart--six.aos-animate .chart__dot--4 .list-chart li { transition-delay: 5s; }
+.chart--six.aos-animate .chart__dot--4 .list-chart li:nth-child(2) { transition-delay: 5.2s; }
+.chart--six.aos-animate .chart__dot--4 .list-chart li:nth-child(3) { transition-delay: 5.4s; }
+
+.chart--six.aos-animate .chart__dot--5 .list-chart li { transition-delay: 5.4s; }
+.chart--six.aos-animate .chart__dot--5 .list-chart li:nth-child(2) { transition-delay: 5.6s; }
+.chart--six.aos-animate .chart__dot--5 .list-chart li:nth-child(3) { transition-delay: 5.8s; }
+
+.chart--six.aos-animate .chart__dot--6 .list-chart li { transition-delay: 5.8s; }
+.chart--six.aos-animate .chart__dot--6 .list-chart li:nth-child(2) { transition-delay: 6s; }
+.chart--six.aos-animate .chart__dot--6 .list-chart li:nth-child(3) { transition-delay: 6.2s; }
+
+/*  chart--six1  */
+.chart--six1 .chart__fill img { top: 2.9vw; left: 4.55vw; width: 20.57vw; }
+
+/*  chart--six2  */
+.chart--six2 { margin-top: -1.9vw; padding-top: 44.65vw; }
+.chart--six2 .chart__fill img { top: 5.9vw; left: 1.95vw; width: 19.53vw; }
+.chart--six2 .chart__dot--1 .list-chart { top: -2.7vw; }
+
+/*  chart--six3  */
+.chart--six3 { padding-top: 45.6vw; }
+.chart--six3 .chart__fill img { top: -0.05vw; left: 2vw; width: 25.83vw; }
+
+/*  chart--six4  */
+.chart--six4 { margin-top: -1.65vw; padding-top: 43.35vw; }
+.chart--six4 .chart__fill img { top: 4.75vw; left: 3.4vw; width: 25.83vw; }
+.chart--six4 .chart__dot--1 .list-chart { top: -2.55vw; }
+.chart--six4 .chart__dot--2 .list-chart { width: 19vw; }
+.chart--six4 .chart__dot--3 .list-chart { width: 19vw; }
+
+/*  chart--six5  */
+.chart--six5 { margin-top: -0.35vw; padding-top: 45.55vw; }
+.chart--six5 .chart__fill img { top: -0.05vw; left: 2.1vw; width: 27.19vw; }
+.chart--six5 .chart__dot--1 .list-chart { width: 30vw; }
+.chart--six5 .chart__dot--2 .list-chart { width: 19vw; }
+.chart--six5 .chart__dot--3 .list-chart { width: 19vw; }
+
+/*  chart--six6  */
+.chart--six6 { margin-top: -0.8vw; padding-top: 46.8vw; }
+.chart--six6 .chart__fill img { top: 1.65vw; left: 3.4vw; width: 25.83vw; }
+.chart--six6 .chart__dot--1 .list-chart { top: -4vw; }
+.chart--six6 .chart__dot--2 .list-chart { width: 19vw; }
+.chart--six6 .chart__dot--3 .list-chart { width: 19vw; }
+.chart--six6 .chart__dot--4 .list-chart { width: 30vw; }
+
+/*  chart--six7  */
+.chart--six7 { padding-top: 45.45vw; }
+.chart--six7 .chart__fill img { top: 3.05vw; left: 4.7vw; width: 21.88vw; }
+.chart--six7 .chart__dot--1 .list-chart { top: -5vw; }
+.chart--six7 .chart__dot--2 .list-chart { width: 19vw; }
+.chart--six7 .chart__dot--3 .list-chart { width: 19vw; }
+.chart--six7 .chart__dot--4 .list-chart { width: 30vw; }
+
+/*  chart--six8  */
+.chart--six8 { margin-top: 3.3vw; padding-top: 48.45vw; }
+.chart--six8 .chart__fill img { top: 4.6vw; left: 4.6vw; width: 23.23vw; }
+.chart--six8 .chart__dot--1 .list-chart { top: -5.5vw; }
+.chart--six8 .chart__dot--2 .list-chart { width: 19vw; }
+.chart--six8 .chart__dot--3 .list-chart { width: 19vw; }
+.chart--six8 .chart__dot--4 .list-chart { width: 30vw; }

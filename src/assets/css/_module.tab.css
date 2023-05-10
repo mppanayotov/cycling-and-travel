@@ -1,0 +1,140 @@
+/* ------------------------------------------------------------ *\
+	tab
+\* ------------------------------------------------------------ */
+
+.tab { padding: 5.95vw 3.8vw 5.95vw 3.65vw; opacity: 0; transition: opacity .3s ease-out; pointer-events: none; }
+.tab .tab__title { font-size: 3.13vw; text-transform: uppercase; color: #fff; font-weight: 500; text-shadow: 0 0 .1vw #000; line-height: 1; }
+.tab .tab__title + .frame-alt { margin-top: 1.89vw; }
+.tab .frame-alt + .frame-alt { margin-top: 3.7vw; }
+
+.tab.active { opacity: 1;  pointer-events: auto; }
+
+/* ------------------------------------------------------------ *\
+	tabs
+\* ------------------------------------------------------------ */
+
+.tabs { position: relative; width: 93.75vw; height: 1000vw; max-height: 0; transition: max-height .6s ease-out, opacity .6s ease-out, transform .6s ease-out; will-change: max-height; }
+.tabs .tabs__inner { position: absolute; top: 0; left: 0; width: 88.02vw; height: 100%; background-size: 88.02vw 172.76vw; background-repeat: no-repeat; background-position: 0% 0%; z-index: 10; }
+.tabs .tab { position: absolute; top: 0; left: 0; width: 100%; }
+.tabs .sidebar-tabs { position: absolute !important; top: 0; right: 0; width: 5.73vw; will-change: height; }
+.tabs .sidebar-tabs .sidebar__inner { will-change: position, transform, left, top, width, opacity; transition: opacity .3s ease-out, visibility .3s ease-out; }
+.tabs .sidebar-tabs.fade .sidebar__inner { opacity: 0; visibility: hidden; pointer-events: none; }
+
+.tabs.tab-mountain-active .tab-link--falls { z-index: 5; }
+
+.tabs.tab-route-active .tab-link--falls,
+.tabs.tab-route-active .tab-link--mountain { z-index: 5; }
+
+.tabs.tab-camp-active .tab-link--falls,
+.tabs.tab-camp-active .tab-link--mountain, 
+.tabs.tab-camp-active .tab-link--route { z-index: 5; }
+
+/*  tabs--1  */
+.tabs--1.tab-lake-active { max-height: 275.89vw; }
+.tabs--1.tab-falls-active { max-height: 243.85vw; }
+.tabs--1.tab-mountain-active { max-height: 240.94vw; }
+.tabs--1.tab-route-active { max-height: 336vw; }
+.tabs--1.tab-camp-active { max-height: 439.9vw; }
+
+/*  tabs--2  */
+.tabs--2.tab-lake-active { max-height: 427.62vw; }
+.tabs--2.tab-falls-active { max-height: 466.15vw; }
+.tabs--2.tab-mountain-active { max-height: 489.5vw; }
+.tabs--2.tab-route-active { max-height: 974vw; }
+.tabs--2.tab-camp-active { max-height: 767.4vw; }
+
+/*  tabs--3  */
+.tabs--3.tab-land-active { max-height: 243.945vw; }
+.tabs--3.tab-route-active { max-height: 322.6vw; }
+.tabs--3.tab-camp-active { max-height: 254.5vw; }
+
+/*  tabs--4  */
+.tabs--4.tab-land-active { max-height: 222.75vw; }
+.tabs--4.tab-route-active { max-height: 615.85vw; }
+.tabs--4.tab-camp-active { max-height: 253.8vw; }
+
+/*  tabs--5  */
+.tabs--5.tab-land-active { max-height: 264.55vw; }
+.tabs--5.tab-camp-active { max-height: 224.3vw; }
+
+/* ------------------------------------------------------------ *\
+	tabs-nav
+\* ------------------------------------------------------------ */
+
+.tabs-nav { width: 5.73vw; transform-style: preserve-3d; }
+.tabs-nav .tab-link { margin-bottom: -2.25vw; }
+.tabs-nav .tab-link:last-child { margin-bottom: 0; }
+
+/* ------------------------------------------------------------ *\
+	tab-link
+\* ------------------------------------------------------------ */
+
+.tab-link { position: relative; padding-top: 2.45vw; width: 5.73vw; height: 1000vw; max-height: 10.78vw; display: block; transition: max-height .3s ease-out; text-decoration: none; transform-style: preserve-3d; will-change: max-height; }
+.tab-link:hover .icon { opacity: .999; }
+
+.tab-link:before,
+.tab-link:after { content: ''; position: absolute; width: 7.81vw; background-repeat: no-repeat; background-position: 50% 50%; pointer-events: none; }
+
+.tab-link:before { top: -1vw; left: -1.3vw; height: 12.81vw; background-size: 7.81vw 12.81vw; }
+.tab-link:after { top: -.9vw; left: -1.35vw; opacity: 0; transition: opacity .3s ease-out; pointer-events: none; }
+
+.tab-link .tab__label { position: relative; left: 65%; transform: rotate(90deg); transform-origin: 0% 0%; margin: 1.25vw auto 0; display: block; white-space: nowrap; text-transform: uppercase; font-size: 1.88vw; color: #231f20; font-weight: 500; line-height: 1; opacity: 0; transition: opacity .3s ease-out; z-index: 1; pointer-events: none; }
+
+.tab-link .icon { position: relative; margin-left: auto; margin-right: auto; opacity: .5; transition: opacity .3s ease-out; z-index: 1;  }
+
+.tab-link.active { z-index: 10; }
+
+.tab-link.active .icon,
+.tab-link.active:hover .icon,
+.tab-link.active .tab__label,
+.tab-link.active:after { opacity: .999; }
+
+.tab-link.active .tab__label { pointer-events: auto; }
+
+/*  .tab-link--lake  */
+.tab-link--lake { z-index: 5; }
+.tab-link--lake .icon { width: 3.96vw; height: 3.75vw; background-image: url(../images/temp/icon-lake.png); background-size: 3.96vw 3.75vw; background-repeat: no-repeat; background-position: 50% 50%; }
+.tab-link--lake:before { background-image: url(../images/temp/tab-bg-blue.png); }
+.tab-link--lake:after { height: 19.84vw; background-size: 7.81vw 19.84vw; background-image: url(../images/temp/tab-bg-blue-active.png); }
+
+.tab-link--lake.active { max-height: 17.81vw; }
+
+/*  .tab-link--land  */
+.tab-link--land { z-index: 5; }
+.tab-link--land .icon { width: 3.96vw; height: 3.75vw; background-image: url(../images/temp/icon-lake.png); background-size: 3.96vw 3.75vw; background-repeat: no-repeat; background-position: 50% 50%; }
+.tab-link--land:before { background-image: url(../images/temp/tab-bg-blue.png); }
+.tab-link--land:after { height: 26.04vw; background-size: 7.81vw 26.04vw; background-image: url(../images/temp/tab-bg-blue-active-big.png); }
+
+.tab-link--land.active { max-height: 24.01vw; }
+
+/*  .tab-link--falls  */
+.tab-link--falls { z-index: 4; }
+.tab-link--falls .icon { width: 3.8vw; height: 3.75vw; background-image: url(../images/temp/icon-falls.png); background-size: 3.8vw 3.75vw; background-repeat: no-repeat; background-position: 50% 50%; }
+.tab-link--falls:before { background-image: url(../images/temp/tab-bg-orange.png); }
+.tab-link--falls:after { height: 29.95vw; background-size: 7.81vw 29.95vw; background-image: url(../images/temp/tab-bg-orange-active.png); }
+
+.tab-link--falls.active { max-height: 27.92vw; }
+
+/*  .tab-link--mountain  */
+.tab-link--mountain { z-index: 3; }
+.tab-link--mountain .icon { width: 4.22vw; height: 4.48vw; background-image: url(../images/temp/icon-mountain.png); background-size: 4.22vw 4.48vw; background-repeat: no-repeat; background-position: 50% 50%; }
+.tab-link--mountain:before { background-image: url(../images/temp/tab-bg-green.png); }
+.tab-link--mountain:after { height: 35.36vw; background-size: 7.81vw 35.36vw; background-image: url(../images/temp/tab-bg-green-active.png); }
+
+.tab-link--mountain.active { max-height: 33.33vw; }
+
+/*  .tab-link--route  */
+.tab-link--route { z-index: 2; }
+.tab-link--route .icon { width: 3.75vw; height: 3.91vw; background-image: url(../images/temp/icon-route.png); background-size: 3.75vw 3.91vw; background-repeat: no-repeat; background-position: 50% 50%; }
+.tab-link--route:before { background-image: url(../images/temp/tab-bg-yellow.png); }
+.tab-link--route:after { height: 29.43vw; background-size: 7.81vw 29.43vw; background-image: url(../images/temp/tab-bg-yellow-active.png); }
+
+.tab-link--route.active { max-height: 27.4vw; }
+
+/*  .tab-link--camp  */
+.tab-link--camp { z-index: 1; }
+.tab-link--camp .icon { width: 3.59vw; height: 3.85vw; background-image: url(../images/temp/icon-camp.png); background-size: 3.59vw 3.85vw; background-repeat: no-repeat; background-position: 50% 50%; }
+.tab-link--camp:before { background-image: url(../images/temp/tab-bg-purple.png); }
+.tab-link--camp:after { height: 28.13vw; background-size: 7.81vw 28.13vw; background-image: url(../images/temp/tab-bg-purple-active.png); }
+
+.tab-link--camp.active { max-height: 26.09vw; }

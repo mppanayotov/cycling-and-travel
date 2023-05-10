@@ -1,0 +1,16 @@
+/* ------------------------------------------------------------ *\
+	Tiles-map
+\* ------------------------------------------------------------ */
+
+.tiles-map { width: 76.9vw; background-color: #fff; }
+.tiles-map .tile-map { margin: auto; }
+
+/* ------------------------------------------------------------ *\
+	Tile-map
+\* ------------------------------------------------------------ */
+
+.tile-map { width: 100%; text-align: center; padding: 1.85vw 2vw 2.6vw; }
+.tile-map .tile__img { margin: auto; }
+.tile-map .tile__img--1 { width: 70.52vw !important; }
+.tile-map .tile__img--2 { width: 69.64vw !important; }
+.tile-map .tile__img--3 { width: 68.02vw !important; }

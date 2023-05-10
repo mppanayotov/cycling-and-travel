@@ -1,0 +1,92 @@
+/* ------------------------------------------------------------ *\
+	Dot
+\* ------------------------------------------------------------ */
+
+.dot { position: relative; width: 1px; height: 1px; border-radius: 50%; background-color: transparent; }
+.dot .dot__fill { display: flex; align-items: center; justify-content: center;  position: absolute; left: 0; bottom: 0; right: 0; top: 0; border-radius: 50%; z-index: 1; transition: .2s ease-out; }
+.dot .dot__fill:before { position: absolute; content: ''; left: 0; right: 0; bottom: 0; top: 0; border-radius: 50%; background-color: #ffff00; box-shadow: 0 0 0 0.15vw #ffff00; z-index: 1; transition: .2s ease-out; z-index: 2;  }
+.dot .dot__sonar { flex: 0 0 25vw; height: 25vw; transform: scale(0); border-radius: 50%; background-color: transparent; border: 1px solid #ffff00; z-index: 1; }
+.dot .dot__arrow { position: absolute; left: 50%; top: 50%; transform: translate(0px, -50%); transform-origin: 0% 50%; height: 1px; background-color: #fff;  z-index: 1; }
+
+.dot--red .dot__fill:before { background-color: #f4221c; box-shadow: 0 0 0 0.15vw #f4221c; }
+.dot.active .dot__sonar { animation: pop-sonar 2s forwards; }
+
+.dot .dot__arrow:before { content: ''; position: absolute; display: block; height: 1px; background-color: #fff;  z-index: 1; transform-origin: 0% 50%; top: 0; left: 100%; }
+
+.dot--map-1--1 .dot__arrow { transform: translate(0px, -50%) rotate(-90deg); width: 2.15vw; }
+.dot--map-1--1 .dot__arrow:before { transform: rotate(50deg); width: 2.3vw; }
+
+.dot--map-1--2 .dot__arrow { transform: translate(0px, -50%) rotate(-90deg); width: 3.1vw; }
+.dot--map-1--2 .dot__arrow:before { transform: rotate(50deg); width: 2.3vw; }
+
+.dot--map-1--3 .dot__arrow { transform: translate(0px, -50%) rotate(-90deg); width: 5vw; }
+.dot--map-1--3 .dot__arrow:before { transform: rotate(50deg); width: 2.9vw; }
+
+.dot--map-1--4 .dot__arrow { transform: translate(0px, -50%) rotate(-53deg); width: 1.3vw; }
+.dot--map-1--4 .dot__arrow:before { transform: rotate(53deg); width: 1.9vw; }
+
+.dot--map-1--5 .dot__arrow { transform: translate(0px, -50%) rotate(50deg); width: 2.6vw; }
+.dot--map-1--5 .dot__arrow:before { transform: rotate(-50deg); width: 3.9vw; }
+
+.dot--map-1--6 .dot__arrow { transform: translate(0px, -50%) rotate(53deg); width: 2.7vw; }
+.dot--map-1--6 .dot__arrow:before { transform: rotate(-53deg); width: 5.9vw; }
+
+.dot--map-1--7 .dot__arrow { transform: translate(0px, -50%) rotate(53deg); width: 4.95vw; }
+.dot--map-1--7 .dot__arrow:before { transform: rotate(-53deg); width: 5.9vw; }
+
+.dot--map-1--8 .dot__arrow { transform: translate(0px, -50%) rotate(53deg); width: 2.6vw; }
+.dot--map-1--8 .dot__arrow:before { transform: rotate(-53deg); width: 5.9vw; }
+
+.dot--map-1--9 .dot__arrow  { transform: rotate(-53deg); width: 1.8vw;  }
+.dot--map-1--9 .dot__arrow:before { transform: rotate(53deg); width: 5.9vw; }
+
+.dot--map-1--10 .dot__arrow { transform: translate(0px, -50%) rotate(53deg); width: 6.45vw;  }
+.dot--map-1--10 .dot__arrow:before { transform: rotate(-53deg); width: 5.9vw; }
+
+.dot--map-2--1 .dot__arrow { transform: translate(0px, -50%) rotate(90deg); width: 5.9vw; }
+.dot--map-2--1 .dot__arrow:before { transform: rotate(-51deg); width: 3.9vw; }
+
+.dot--map-2--2 .dot__arrow { transform: translate(0px, -50%) rotate(-50deg); width: 2.8vw; }
+.dot--map-2--2 .dot__arrow:before { transform: rotate(50deg); width: 7.9vw; }
+
+.dot--map-2--3 .dot__arrow { transform: translate(0px, -50%) rotate(50deg); width: 2.5vw; }
+.dot--map-2--3 .dot__arrow:before { transform: rotate(-50deg); width: 6.9vw; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

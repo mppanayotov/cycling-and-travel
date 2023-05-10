@@ -1,0 +1,7 @@
+/* ------------------------------------------------------------ *\
+	Note
+\* ------------------------------------------------------------ */
+
+.note { width: 100%; max-width: 28vw; max-width: 33.6rem; padding: 2.9vw; font-size: 1.37vw; letter-spacing: .03em; line-height: 1.6; }
+.note .note__title { margin-bottom: 1.2vw; }
+.note p { margin-right: -0.3vw; }

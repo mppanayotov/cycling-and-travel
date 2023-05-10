@@ -1,0 +1,35 @@
+/* ------------------------------------------------------------ *\
+	Fonts
+\* ------------------------------------------------------------ */
+
+@font-face {
+	font-family: 'Aileron';
+	src: url('../fonts/Aileron-Regular.eot');
+	src: url('../fonts/Aileron-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Aileron-Regular.woff2') format('woff2'),
+		url('../fonts/Aileron-Regular.woff') format('woff'),
+		url('../fonts/Aileron-Regular.ttf') format('truetype'),
+		url('../fonts/Aileron-Regular.svg#Aileron-Regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'HandofSean';
+	src: url('../fonts/HandofSean.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/HandofSean.woff') format('woff'),
+		url('../fonts/HandofSean.ttf')  format('truetype'),
+		url('../fonts/HandofSean.svg#HandofSean') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ChaletComprime-CologneEighty';
+	src: url('../fonts/ChaletComprime-CologneEighty.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ChaletComprime-CologneEighty.woff') format('woff'),
+		url('../fonts/ChaletComprime-CologneEighty.ttf')  format('truetype'),
+		url('../fonts/ChaletComprime-CologneEighty.svg#ChaletComprime-CologneEighty') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}

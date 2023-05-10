@@ -1,0 +1,34 @@
+/* ------------------------------------------------------------ *\
+	Logo
+\* ------------------------------------------------------------ */
+
+.logo { display: inline-block; font-size: 0; width: calc(37.26vw + 0.001vw); height: calc(25.67vw + 0.001vw); background: url(../images/logo.png) no-repeat 0 0; background-size: cover; background-position: center; text-decoration: none; letter-spacing: 0.08vw; }
+/*.logo:hover,
+.logo a:hover,
+.logo a { text-decoration: none; }*/
+
+.logo--secondary { background-image: url(../images/logo-secondary.png); width: calc(37.33vw + 0.001vw); height: calc(27.08vw + 0.001vw); }
+.logo--secondary-w { background-image: url(../images/logo-secondary-w.png); width: calc(37.68vw + 0.001vw); height: calc(27.42vw + 0.001vw); }
+
+.logo__wrapper { position: relative; font-family: 'Roboto Condensed', sans-serif; letter-spacing: 0vw; }
+.logo__wrapper .logo__nav { position: absolute; right: 0; width: 27.75vw; text-transform: uppercase; color: #fff; bottom: 3.75vw; }
+.logo__wrapper .logo__nav a { text-decoration: none; opacity: .6; transition: none; }
+.logo__wrapper .logo__nav li + li { padding-left: 2.17vw; position: relative; }
+.logo__wrapper .logo__nav li + li:before { content: ''; position: absolute; top: 50%; transform: translateY(-50%); width: 0.11vw; background: rgba(255,255,255,.7); height: 2.5vw; left: 0; }
+.logo__wrapper .logo__nav a:hover { opacity: 1; }
+.logo__wrapper .logo__nav ul { display: flex; justify-content: space-between; }
+.logo__wrapper .copyright { position: absolute; right: -0.57vw; width: 28.67vw; bottom: -0.17vw; opacity: .7; }
+
+.logo--brown { background-image: url(../images/logo-brown.png); }
+
+/*Logo england*/
+.logo--england { width: 20.99vw; height: 13.33vw;  background-image: url(../images/logo-england.png); }
+
+/*Logo england*/
+.logo--japan { width: 18.07vw; height: 30.99vw; background-image: url(../images/logo-japan.png); }
+
+$breakpoint-mobile {
+
+	.logo__wrapper .copyright { bottom: -0.83vw; }
+	.logo__wrapper .logo__nav { bottom: 3.33vw; }
+}

@@ -1,0 +1,34 @@
+/* ------------------------------------------------------------ *\
+	Preloader
+\* ------------------------------------------------------------ */
+
+.preloader { position: fixed; background-position: center center; background-color: #d1c8b7;  top: 0; left: 0; height: 100vh; width: 100vw; z-index: 100; overflow: hidden; text-align: center; background-repeat: no-repeat; background-image: url(../images/temp/preloader-bg.jpg); background-size: calc(100% + 1px) calc(100% + 1px); transition: 2s 1s ease-out; transform-style: preserve-3d; }
+.preloader.out { opacity: 0; visibility: hidden; pointer-events: none; }
+
+.preloader > img { position: absolute; left: 50%; transform: translate(-50%,-50%); top: calc(50% + 10.58vw); margin-top: 0.73vw; }
+.preloader .preloader-bg { position: absolute; top: 50%; left: 50%; z-index: 0; width: auto; height: auto; min-width: 100%; min-height: 100%; max-width: none; transform: translate(-50%, -50%); }
+.preloader .preloader__image { font-size: 1.33vw; position: absolute; left: 50%; transform: translate(-50%,-50%); overflow: hidden; margin: 0 auto; transform-style: preserve-3d; }
+.preloader .preloader__image .preloader__loader { content: ''; position: absolute; top: 0; left: 0; width: 0; height: 100%; background-size: cover; transition: width .3s ease-out; }
+.preloader .preloader__image img { width: 100%; height: 100%; }
+
+.preloader .preloader__loaded { position: absolute; top: calc(50% + 0.42vw); left: calc(50% + 0.42vw); transform: translate(-50%, -50%); font-family: 'HandofSean', sans-serif; font-weight: 600; font-size: 1.11vw; }
+
+/*Preloader chapter 3*/
+.preloader--chapter-3 .preloader__image { margin-left: 0.67vw; }
+.preloader--chapter-3 .preloader__loaded { margin-top: 1.83vw; margin-left: 1.33vw; font-size: 1.11vw;  }
+.preloader--chapter-3 .preloader__image .preloader__percent { font-size: 0.94vw; }
+.preloader--chapter-3 > img  { transform: translate(-50%,-50%) scale(1.0085,1.0085); }
+
+/*Preloader chapter 4*/
+.preloader--chapter-4 .preloader__image { margin-left: 0.67vw; }
+.preloader--chapter-4 .preloader__loaded { margin-top: -1.17vw; margin-left: -0.67vw; font-size: 1.11vw;  }
+.preloader--chapter-4 .preloader__image .preloader__percent { font-size: 0.94vw; }
+.preloader--chapter-4 .preloader__image .preloader__loader  { background-size: 11vw 11vw; }
+.preloader--chapter-4 > img  { margin-top: 0.43vw; transform: translate(-50%,-50%) scale(1); }
+
+/*Preloader chapter 5*/
+.preloader--chapter-5 .preloader__loaded { margin-top: 0.13vw; margin-left: -0.47vw; font-size: 1.11vw;  }
+.preloader--chapter-5 .preloader__image .preloader__percent { font-size: 0.94vw; }
+.preloader--chapter-5 .preloader__image .preloader__loader  { background-size: 13.385 10.677vw; }
+.preloader--chapter-5 > img  { margin-top: -0.07vw; transform: translate(-50%,-50%) scale(1); }
+

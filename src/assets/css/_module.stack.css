@@ -1,0 +1,96 @@
+/* ------------------------------------------------------------ *\
+	Stack-japan-list
+\* ------------------------------------------------------------ */
+
+.stack-japan-list { position: relative; }
+.stack-japan-list .stack__title { position: relative; text-align: center; }
+.stack-japan-list .stack__title img { width: 28.96vw; height: 11.09vw; }
+.stack-japan-list .stack__subtitle { margin: 0.9vw auto 0; max-width: 73%; line-height: 1.7; letter-spacing: 0.02em; }
+.stack-japan-list .stack__body { margin-top: 7.9vw; }
+.stack-japan-list .stack__entry { display: flex; justify-content: space-between; align-items: flex-start; width: 100%; max-width: 90.6%; margin: auto; padding-left: 1.5%; }
+.stack-japan-list .stack__entry--2 { margin-top: 9.5vw; }
+.stack-japan-list .stack__entry--3  { margin-top: 5.15vw;  }
+.stack-japan-list .stack__number { width: 21.35vw; margin-top: -4.5vw; }
+.stack-japan-list .stack__number--2 { margin-top: -4.15vw;   }
+.stack-japan-list .stack__number--3  { margin-top: -3.6vw; }
+.stack-japan-list .stack__content { width: 74%; }
+
+/* ------------------------------------------------------------ *\
+	Stack-list
+\* ------------------------------------------------------------ */
+
+.stack-list { position: relative; margin-left: auto; margin-right: auto; width: 85.98vw; padding-top: 7.41vw; }
+.stack-list .stack__entry { position: relative; }
+.stack-list .stack__entry + .stack__entry { margin-top: 4.24vw; }
+.stack-list .stack__content { margin-left: auto; margin-right: 1.56vw; width: 74.75vw; }
+.stack-list .stack__content--alt { padding: 0 1.3vw 0.7vw .1vw; }
+.stack-list .stack__icon { position: absolute; left: 0; top: 0.35vw;  width: 8.33vw; max-width: none; }
+.stack-list .stack__line { position: absolute; top: 4.05vw; left: 8.25vw; width: 76.09vw; overflow: hidden;  }
+.stack-list .stack__line img { width: 100%; max-width: none; display: block; }
+
+.stack-list .article-alt { font-size: 1.56vw; line-height: 1.6; letter-spacing: 0.001em; color: #232426; }
+.stack-list .article-alt + .photos { margin-top: 3.1vw; }
+
+.stack-list .article-alt p,
+.stack-list .article-alt ul { margin-bottom: 0;  }
+
+.stack-list .article-alt p + p { margin-top: 2.3vw; }
+.stack-list .article-alt p + .article__cols { margin-top: 2.6vw; }
+.stack-list .article-alt p + .lists { margin-top: 0.86vw; }
+.stack-list .article-alt .lists + p { margin-top: 2.59vw;  }
+.stack-list .article-alt .article__intro { font-size: 1.88vw; letter-spacing: -0.001em; line-height: 1.2; }
+.stack-list .article-alt .article__inner { margin-top: 4.5vw; }
+.stack-list .article-alt .article__cols  { display: flex; }
+.stack-list .article-alt .article__col { flex: 1 1 auto; }
+
+.stack-list .image { flex: 0 0 auto; }
+.stack-list .image img { width: 100%; max-width: none; }
+.stack-list .image--1 { margin: -0.15vw 0.65vw 0 1.8vw; width: 27.19vw; }
+.stack-list .image--2 { margin: 0.7vw 1.3vw 0.5vw 3.1vw; width: 25.89vw; }
+.stack-list .image--note { width: 29.17vw; }
+.stack-list .image--note1 { margin: 0.75vw 0 0 2.61vw; }
+.stack-list .image--note2 { margin: .5vw 0 0 5.6vw; }
+.stack-list .image--note3 { margin: 0.7vw 1.35vw 0 3.7vw; }
+.stack-list .image--note4 { margin-top: 2vw; }
+
+.stack-list .lists { width: 74.6vw; display: flex; }
+.stack-list .list { width: 34.58vw; flex: 0 0 auto; }
+.stack-list .list + .list { margin-left: auto; }
+.stack-list .list-check { width: 22.6vw; flex: 0 0 auto; }
+.stack-list .list-check:nth-child(2):not(last-child) { margin-left: auto; margin-right: auto; }
+
+.stack-list .photos { width: 73.35vw; }
+
+/* ------------------------------------------------------------ *\
+	Stack-life-saviours
+\* ------------------------------------------------------------ */
+
+.stack-life-saviours { text-align: center; }
+.stack-life-saviours .stack__entries { display: flex; justify-content: space-between; align-items: flex-end; width: 82vw; margin: auto; }
+
+.stack-life-saviours .stack__entry--bag { width: 7.92vw; }
+.stack-life-saviours .stack__entry--light { width: 9.74vw; }
+.stack-life-saviours .stack__entry--gel { width: 5.68vw; }
+.stack-life-saviours .stack__entry--cream { width: 7.66vw; }
+.stack-life-saviours .stack__entry--sunscreen { width: 5.05vw; }
+.stack-life-saviours .stack__entry--pain-relief { width: 9.43vw; }
+
+.stack-life-saviours .stack__entry--4,
+.stack-life-saviours .stack__entry--5,
+.stack-life-saviours .stack__entry--6 { margin-bottom: .2vw;  }
+
+.stack-life-saviours .stack__bracket { margin-top: 2.9vw; width: 81.25vw; }
+.stack-life-saviours .stack__label { margin-top: 3.25vw; width: 36.98vw; }
+
+.stack-life-saviours .stack__label,
+.stack-life-saviours .stack__bracket,
+.stack-life-saviours .stack__entry { transition: opacity .2s ease-out; opacity: 0; }
+
+.stack-life-saviours.aos-animate .stack__entry--1  { transition-delay: 0.3s; opacity: 1; }
+.stack-life-saviours.aos-animate .stack__entry--2  { transition-delay: 0.6s; opacity: 1; }
+.stack-life-saviours.aos-animate .stack__entry--3  { transition-delay: 0.9s; opacity: 1; }
+.stack-life-saviours.aos-animate .stack__entry--4  { transition-delay: 1.2s; opacity: 1; }
+.stack-life-saviours.aos-animate .stack__entry--5  { transition-delay: 1.5s; opacity: 1; }
+.stack-life-saviours.aos-animate .stack__entry--6  { transition-delay: 1.8s; opacity: 1; }
+.stack-life-saviours.aos-animate .stack__bracket { transition-delay: 2.1s; opacity: 1; }
+.stack-life-saviours.aos-animate .stack__label { transition-delay: 2.4s; opacity: 1; }

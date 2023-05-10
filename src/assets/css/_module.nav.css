@@ -1,0 +1,53 @@
+/* ------------------------------------------------------------ *\
+	Nav-logo
+\* ------------------------------------------------------------ */
+
+.nav-logo { position: relative; text-transform: uppercase; font-size: 0; }
+.nav-logo ul { position: absolute; right: 0; bottom: 4.3vw; display: flex; justify-content: center; width: 100%; padding-left: 27%; list-style-type: none; }
+.nav-logo li { position: relative; }
+.nav-logo li + li  { margin-left: 0.75vw; padding-left: 0.88vw; }
+.nav-logo li + li:before { content: ''; position: absolute; width: 0.11vw; height: 2.67vw; left: 0; top: -0.08vw; background-color: #564436; }
+.nav-logo a { position: relative; transition: .2s ease-out; }
+.nav-logo a:hover { opacity: .5; }
+
+.nav-logo .nav__image { position: absolute; }
+.nav-logo .nav__entry .nav__image { position: relative; }
+
+.nav-logo .nav__image--logo { position: relative; }
+.nav-logo .nav__image--parchment-logo { top: 0; left: 0; width: 37.82vw; }
+.nav-logo .nav__image--japan-bottom-logo { top: 0; left: 0; width: 37.4vw; }
+.nav-logo .nav__image--can-bottom-logo { top: 0; left: 0; width: 28.07vw; }
+.nav-logo .nav__image--home { width: 3.54vw; }
+.nav-logo .nav__image--england { width: 7.24vw; }
+.nav-logo .nav__image--canada { width: 6.35vw; }
+.nav-logo .nav__image--netherlands { width: 16.62vw; }
+.nav-logo .nav__image--japan { width: 4.17vw; }
+
+/*  nav-logo--england  */
+.nav-logo--england .nav__entry--netherlands { margin-left: 0.75vw; padding-left: 1vw; }
+.nav-logo--england .nav__entry--japan { margin-left: 0.63vw; }
+
+/*  nav-logo--japan  */
+.nav-logo--japan ul { bottom: 3.9vw; margin-right: 0.2vw; justify-content: space-between; }
+.nav-logo--japan li { flex-grow: 1; }
+.nav-logo--japan li:first-child { text-align: left; }
+.nav-logo--japan li:nth-child(2) { text-align: center; }
+.nav-logo--japan li:last-child { text-align: right; }
+.nav-logo--japan li + li  { position: relative; margin-left: 0.75vw; padding-left: 0.88vw; }
+.nav-logo--japan li + li:before  { display: none; }
+.nav-logo--japan .nav__image--home  { width: 4.175vw; }
+
+/*  nav-logo--can  */
+.nav-logo--can ul { top: 19.45vw; left: 0.3vw; right: auto; bottom: auto; padding: 0; justify-content: flex-start;}
+.nav-logo--can li { flex: 0 0 auto; }
+.nav-logo--can li + li  { margin: 0; padding: 0;  }
+.nav-logo--can li + li:before  { display: none; }
+.nav-logo--can a { display: block; opacity: 0; }
+.nav-logo--can a:hover { opacity: 1; }
+
+.nav-logo--can .copyright { position: absolute; top: 23.6vw; left: 0.2vw; font-size: 1.41vw; letter-spacing: 0.19em; text-transform: uppercase; white-space: nowrap; font-family: $cha; color: #fff; }
+
+.nav-logo--can .nav__entry--japan  { margin-left: 3.1vw; }
+
+.nav-logo--can .nav__image--home { width: 3.13vw; }
+.nav-logo--can .nav__image--japan { width: 3.75vw; }

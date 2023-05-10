@@ -1,0 +1,46 @@
+/* ------------------------------------------------------------ *\
+	Main
+\* ------------------------------------------------------------ */
+
+.main { background-size: 100% auto; background-position: center top; background-repeat: no-repeat; padding-top: 124.33vw; padding-bottom: 0.42vw; position: relative; }
+
+.main--secondary { padding-top: 99.63vw; } 
+.main--secondary .section--numbered { margin-top: 4.07vw; padding-bottom: 4.42vw; }
+.main--secondary .section--numbered:nth-child(n+4) + .section--numbered { margin-top: 4.07vw; }
+.main--secondary .section--numbered > img:first-child { margin-top: -13.5vw; }
+.main--secondary .section .section__title:last-child:after { display: none; }
+.main--secondary .section--outro .logo__wrapper { bottom: auto; top: 27.5vw; transform: none; left: 6vw; letter-spacing: 0.17vw; }
+.main--secondary .logo__wrapper .copyright { right: -0.42vw; }
+.main--secondary .section--outro .copyright { letter-spacing: 0.17vw; width: 28.75vw; }
+
+/*Main  chapter 3*/
+.main--chapter-3 { padding-top: 30.83vw; background-color: #232525; background-size: 100vw; }
+
+/*Main  chapter 4*/
+.main--chapter-4 { padding-top: 63.23vw; background-color: #fff; background-size: 100vw; }
+
+/*Main  chapter 5*/
+.main--chapter-5 { padding: 0; background-size: 25vw 14.06vw; background-repeat: repeat; background-position: 0% 0%; }
+
+$breakpoint-mobile {
+	.main--secondary .section--outro .copyright { letter-spacing: 0.13vw; }
+}
+
+/* ------------------------------------------------------------ *\
+	Main-home
+\* ------------------------------------------------------------ */
+
+.main-home { position: relative; width: 100vw; height: auto; padding-top: 56%;  display: flex; align-items: center; justify-content: center; }
+.main-home .section--landing { position: absolute; top: 0; left: 0; }
+
+@media (min-aspect-ratio: 16/9) and (min-width: calc($responsive-sm + 1px)) {
+	.main-home { width: 178vh; height: 100vh; padding-top: 0; }
+}
+
+$breakpoint-tablet-portrait {
+	.main-home  { height: 119.8vw; }
+}
+
+$breakpoint-mobile {
+	.main-home  { height: 312.5vw; }
+}

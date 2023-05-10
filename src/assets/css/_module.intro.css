@@ -1,0 +1,137 @@
+/* ------------------------------------------------------------ *\
+	Intro
+\* ------------------------------------------------------------ */
+
+.intro { position: relative; text-align: center; margin-bottom: 4.17vw; }
+.intro .intro__footer .ico-pin-l { display: inline-block; margin-bottom: 0; margin-left: 22.08vw; }
+.intro .intro__footer { padding: 3.33vw 2.92vw 0; }
+.intro .ico-pin-p { text-align: center; margin: 0 auto 3.46vw; display: block; }
+.intro .ico-arrow { margin-top: 0.28vw; margin-left: -8.75vw; }
+
+.intro--secondary > img { position: absolute; left: 6.12vw; top: 0; }
+.intro--secondary .list-pins { background-position: calc(100% - 3.5vw) -0.33vw; min-height: 124.08vw; margin-bottom: -14.58vw; }
+.intro--secondary .list-pins li { padding-left: 3.17vw; opacity: 0; }
+.intro--secondary .list-pins li:nth-child(1) { top: 34.83vw; right: 33.08vw; transition-delay: 1s; }
+.intro--secondary .list-pins li:nth-child(2) { top: 25.92vw; right: 15.33vw; transition-delay: 1.2s; }
+.intro--secondary .list-pins li:nth-child(3) { bottom: auto; top: 43.75vw; right: 32.42vw; transition-delay: 1.4s; }
+.intro--secondary .list-pins li:nth-child(4) { bottom: auto; top: 41.92vw; left: 44.67vw; transition-delay: 1.6s; }
+.intro--secondary .list-pins li:nth-child(5) { top: 46.08vw; left: 37.92vw; padding-left: 0; padding-right: 5vw; z-index: 5; transition-delay: 1.8s; }
+.intro--secondary .list-pins li:nth-child(5) i,
+.intro--secondary .list-pins li:nth-child(6) i { left: auto; right: 0; }
+.intro--secondary .list-pins li:nth-child(6) i { top: -2.13vw; }
+.intro--secondary .list-pins li:nth-child(6) { top: 41.83vw; left: 32.25vw; padding-left: 0; padding-right: 5.5vw; transition-delay: 2s; }
+.intro--secondary .list-pins li:nth-child(7) { top: 48.79vw; left: 44.75vw; transition-delay: 2.2s; }
+.intro--secondary .list-pins li:nth-child(8) { bottom: 42vw; left: 41.75vw; transition-delay: 2.4s; }
+.intro--secondary .list-pins li:nth-child(9) { bottom: 47.75vw; left: 29.83vw; transition-delay: 2.6s; }
+.intro--secondary .list-pins li:nth-child(10) { bottom: 52.42vw; left: 20.33vw; transition-delay: 2.8s; }
+.intro--secondary .list-pins li:nth-child(11)  { transition-delay: 3s; }
+.intro--secondary .list-pins li:nth-child(12)  { transition-delay: 3.2s; }
+.intro--secondary .ico-arrow-r-b { position: absolute; right: 34.17vw; bottom: 16.25vw; }
+
+/*Intro chapter 3*/
+.intro--chapter-3 { position: relative; margin-bottom: -14.04vw; }
+.intro--chapter-3:before { content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 62.5vw; background-image: url(../images/temp/bg-chapter-3.jpg); background-size: 100vw; background-repeat: repeat; }
+
+.intro--chapter-3 .intro__image { position: absolute; left: auto; top: auto; z-index: 1; }
+.intro--chapter-3 .intro__image--alex { top: 11.58vw; left: -15.08vw; }
+.intro--chapter-3 .intro__image--bagpipe { top: 6.42vw; left: 43.08vw; }
+.intro--chapter-3 .ico-arrow-r-b { position: absolute; right: auto; bottom: auto; left: 68.92vw; top: 84.33vw; }
+
+.intro--chapter-3 .intro__body { position: relative; height: 41.67vw; z-index: 1; text-align: left; }
+
+.intro--chapter-3 .intro__image--team-members { top: 1.21vw; left: -7vw; width: 53.33vw; opacity: 0; transition: .5s ease-out; }
+.intro--chapter-3 .intro__team.aos-animate .intro__image--team-members  { transition-delay: 0.3s; opacity: 1; }
+
+.intro--chapter-3 .intro__image--team-captain { top: 0.17vw; left: 32.92vw; width: 11.67vw; opacity: 0; transition: .5s ease-out; }
+.intro--chapter-3 .intro__team.aos-animate .intro__image--team-captain  { transition-delay: 0.6s; opacity: 1; }
+
+.intro--chapter-3 .intro__image--team-support { top: 12.38vw; left: 32.75vw; width: 11.67vw; opacity: 0; transition: .5s ease-out; }
+.intro--chapter-3 .intro__team.aos-animate .intro__image--team-support  { transition-delay: 0.9s; opacity: 1; }
+
+.intro--chapter-3 .intro__image--team-photographer { top: 24.54vw; left: 32.92vw; width: 11.67vw; opacity: 0; transition: .5s ease-out; }
+.intro--chapter-3 .intro__team.aos-animate .intro__image--team-photographer  { transition-delay: 1.2s; opacity: 1; }
+
+.intro--chapter-3 .intro__image--bracket { top: 2.33vw; left: 47.96vw; width: 3.08vw; opacity: 0; transition: .5s ease-out; }
+.intro--chapter-3 .intro__team.aos-animate .intro__image--bracket  { transition-delay: 1.5s; opacity: 1; }
+
+.intro--chapter-3 .intro__image--intro-chapter-3-title { top: 5.5vw; left: 55.42vw; width: 35.88vw; opacity: 0; transition: .5s ease-out; }
+.intro--chapter-3 .intro__team.aos-animate .intro__image--intro-chapter-3-title  { transition-delay: 1.8s; opacity: 1; }
+
+.intro--chapter-3 .list-pins--chapter-3 { margin-right: 0.58vw; font-size: 1.57vw; letter-spacing: 0.08vw; }
+.intro--chapter-3 .list-pins--chapter-3 li { right: auto; bottom: auto; }
+.intro--chapter-3 .list-pins--chapter-3 li i { right: auto; bottom: auto; }
+.intro--chapter-3 .list-pins--chapter-3 li:nth-child(1) { top: 90.63vw; left: 49vw; z-index: 1; }
+.intro--chapter-3 .list-pins--chapter-3 li:nth-child(1) i { top: -4.33vw; left: 0.42vw; }
+.intro--chapter-3 .list-pins--chapter-3 li:nth-child(2) { top: 93.38vw; left: 41.17vw; }
+.intro--chapter-3 .list-pins--chapter-3 li:nth-child(2) i { top: -3.96vw; left: 0.33vw; }
+.intro--chapter-3 .list-pins--chapter-3 li:nth-child(3) { top: 91.21vw; left: 33.58vw; }
+.intro--chapter-3 .list-pins--chapter-3 li:nth-child(3) i { top: -4.21vw; left: 0.42vw; }
+.intro--chapter-3 .list-pins--chapter-3 li:nth-child(4) { top: 95.42vw; left: 20.58vw; }
+.intro--chapter-3 .list-pins--chapter-3 li:nth-child(4) i { top: -6.33vw; left: 5.63vw; }
+.intro--chapter-3 .list-pins--chapter-3 li:nth-child(5) { top: 89.5vw; left: 14.83vw; }
+.intro--chapter-3 .list-pins--chapter-3 li:nth-child(5) i { top: -3.96vw; left: 7.83vw; }
+.intro--chapter-3 .list-pins--chapter-3 li:nth-child(6) { top: 82.5vw; left: 13.17vw; }
+.intro--chapter-3 .list-pins--chapter-3 li:nth-child(6) i { top: -4.42vw; left: 7.46vw; }
+.intro--chapter-3 .list-pins--chapter-3 li:nth-child(7) { top: 83.5vw; left: 24.33vw; }
+.intro--chapter-3 .list-pins--chapter-3 li:nth-child(7) i { top: -5.88vw; left: 5.17vw; }
+.intro--chapter-3 .list-pins--chapter-3 li:nth-child(8) { top: 82vw; left: 36.33vw; }
+.intro--chapter-3 .list-pins--chapter-3 li:nth-child(8) i { top: -4.21vw; left: 0.42vw; }
+.intro--chapter-3 .list-pins--chapter-3 li:nth-child(9) { top: 77.75vw; left: 41.67vw; }
+.intro--chapter-3 .list-pins--chapter-3 li:nth-child(9) i { top: -4.33vw; left: 0.63vw; }
+.intro--chapter-3 .list-pins--chapter-3 li:nth-child(10) { top: 82.96vw; left: 49.25vw; }
+.intro--chapter-3 .list-pins--chapter-3 li:nth-child(10) i { top: -4.17vw; left: 0.33vw; }
+.intro--chapter-3 .list-pins--chapter-3 li:nth-child(11) { top: 88.71vw; left: 49.42vw; }
+.intro--chapter-3 .list-pins--chapter-3 li:nth-child(12) { top: 77.79vw; left: 68.04vw; }
+.intro--chapter-3 .list-pins--chapter-3 li:nth-child(12) i { top: -6vw; left: 3.58vw; }
+
+/*Intro chapter 4*/
+.intro--chapter-3 { position: relative; margin-bottom: -14.04vw; }
+.intro--chapter-3:before { content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 62.5vw; background-image: url(../images/temp/bg-chapter-3.jpg); background-size: 100vw; background-repeat: repeat; }
+
+.intro--chapter-3 .intro__image { position: absolute; left: auto; top: auto; z-index: 1; }
+.intro--chapter-3 .intro__image--alex { top: 11.58vw; left: -15.08vw; }
+.intro--chapter-3 .intro__image--bagpipe { top: 6.42vw; left: 43.08vw; }
+.intro--chapter-3 .ico-arrow-r-b { position: absolute; right: auto; bottom: auto; left: 68.92vw; top: 84.33vw; }
+
+.intro--chapter-3 .intro__body { position: relative; height: 41.67vw; z-index: 1; text-align: left; }
+
+.intro--chapter-3 .intro__image--team-members { top: 1.21vw; left: -7vw; width: 53.33vw; opacity: 0; transition: .5s ease-out; }
+.intro--chapter-3 .intro__team.aos-animate .intro__image--team-members  { transition-delay: 0.3s; opacity: 1; }
+
+.intro--chapter-3 .intro__image--team-captain { top: 0.17vw; left: 32.92vw; width: 11.67vw; opacity: 0; transition: .5s ease-out; }
+.intro--chapter-3 .intro__team.aos-animate .intro__image--team-captain  { transition-delay: 0.6s; opacity: 1; }
+
+.intro--chapter-3 .intro__image--team-support { top: 12.38vw; left: 32.75vw; width: 11.67vw; opacity: 0; transition: .5s ease-out; }
+.intro--chapter-3 .intro__team.aos-animate .intro__image--team-support  { transition-delay: 0.9s; opacity: 1; }
+
+.intro--chapter-3 .intro__image--team-photographer { top: 24.54vw; left: 32.92vw; width: 11.67vw; opacity: 0; transition: .5s ease-out; }
+.intro--chapter-3 .intro__team.aos-animate .intro__image--team-photographer  { transition-delay: 1.2s; opacity: 1; }
+
+.intro--chapter-3 .intro__image--bracket { top: 2.33vw; left: 47.96vw; width: 3.08vw; opacity: 0; transition: .5s ease-out; }
+.intro--chapter-3 .intro__team.aos-animate .intro__image--bracket  { transition-delay: 1.5s; opacity: 1; }
+
+.intro--chapter-3 .intro__image--intro-chapter-3-title { top: 5.5vw; left: 55.42vw; width: 35.88vw; opacity: 0; transition: .5s ease-out; }
+.intro--chapter-3 .intro__team.aos-animate .intro__image--intro-chapter-3-title  { transition-delay: 1.8s; opacity: 1; }
+
+
+/* ------------------------------------------------------------ *\
+	intro-chapter-5
+\* ------------------------------------------------------------ */
+
+.intro-chapter-5 { position: relative; height: 282.71vw; }
+
+.intro-chapter-5 .intro__image { position: absolute; }
+.intro-chapter-5 .intro__image img { max-width: none; }
+
+.intro-chapter-5 .intro__image--pulling { position: relative; margin-top: 0.1vw; }
+.intro-chapter-5 .intro__image--hand { top: 75.2vw; left: 32.35vw; z-index: 1; }
+.intro-chapter-5 .intro__image--map { top: 102.4vw; left: -0.25vw; }
+.intro-chapter-5 .intro__image--title { top: 136.65vw; left: 5.45vw; }
+.intro-chapter-5 .intro__image--red { top: 157.35vw; left: 24.15vw; }
+.intro-chapter-5 .intro__image--arrow { top: 157.3vw; left: 17.3vw; }
+
+.intro-chapter-5 .intro__image--triumpf { top: 178.1vw; left: 47.7vw; }
+.intro-chapter-5 .intro__image--camper { top: 227.45vw; left: 3.65vw; }
+.intro-chapter-5 .intro__image--note { top: 241.7vw; left: 58.45vw; }
+
+.intro-chapter-5 .map-canada { position: absolute; top: 168.85vw; left: 0; z-index: 2; }

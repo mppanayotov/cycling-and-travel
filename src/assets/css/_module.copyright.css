@@ -1,0 +1,9 @@
+/* ------------------------------------------------------------ *\
+	Copyrigt
+\* ------------------------------------------------------------ */
+
+.copyright { color: #fff; text-transform: uppercase; font-size: 1.54rem; letter-spacing: 0.21rem; text-align: center; }
+
+$breakpoint-mobile {
+	.copyright { letter-spacing: 0.19rem; }
+}

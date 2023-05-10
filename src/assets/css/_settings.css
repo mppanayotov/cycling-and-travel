@@ -1,0 +1,30 @@
+$font-family-sans-serif     : Arial, Helvetica, sans-serif;
+$font-family-serif          : Times, 'Times New Roman', serif;
+$f-base 			        : 'Roboto', sans-serif;
+
+$cha 						: 'ChaletComprime-CologneEighty', sans-serif;
+$hand 						: 'HandofSean', sans-serif;
+$ail 						: 'Aileron', sans-serif;
+$robo 						: 'Roboto', sans-serif;
+
+$font-size-base             : 2.25rem;
+$line-height-base           : 1.2;
+
+$shell-max-width            : 1200px;
+$shell-gutter               : 10px;
+
+$dark 						: #464646;
+$black 						: rgba(0,0,0,.8);
+$red 						: #e53128;
+$white 						: #e2d7c4;
+
+$responsive-xxs             : 479px;
+$responsive-xs              : 767px;
+$responsive-sm              : 1023px;
+$responsive-md              : 1200px;
+
+$breakpoint-mobile-portrait : @media (max-width: $responsive-xxs);
+$breakpoint-mobile          : @media (max-width: $responsive-xs);
+$breakpoint-tablet-portrait : @media (max-width: $responsive-sm);
+$breakpoint-small-desktop   : @media (max-width: $responsive-md);
+$retina                     : @media (min-resolution: 2dppx);

@@ -1,0 +1,18 @@
+/* ------------------------------------------------------------ *\
+	Footer
+\* ------------------------------------------------------------ */
+
+.footer { position: fixed; bottom: -14.63vw; left: 0; width: 100vw; background-size: auto 100%; background-position: left bottom; background-repeat: repeat-x; height: 14.63vw; display: flex; align-items: flex-end; transition: bottom .6s; pointer-events: none; z-index: 100; }
+
+.footerFixed .footer { bottom: 0; }
+
+.footer .footer__nav { width: 100vw; font-size: 1.88vw; font-family: 'Roboto Condensed'; text-transform: uppercase;  color: #989898; pointer-events: auto; }
+.footer .footer__nav ul { display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; }
+.footer .footer__nav a { position: relative; padding-bottom: 0.88vw; display: inline-block; text-decoration: none; transition: color .3s ease-out; }
+.footer .footer__nav a:hover { color: $dark; }
+.footer .footer__nav i { position: absolute; bottom: 1.6em; left: -2.79vw; font-size: 0.83vw; }
+.footer .footer__nav li { flex: 1 1 auto; }
+
+.footer .footer__nav .home { margin-right: 5.33vw; padding: 1.72vw; flex: 0 0 auto; box-shadow: 0.05vw 0.42vw 0.53vw rgba(0,0,0,.2); }
+.footer .footer__nav .home a { padding: 0; }
+.footer .footer__nav .home i { position: relative; left: 0; bottom: 0; }

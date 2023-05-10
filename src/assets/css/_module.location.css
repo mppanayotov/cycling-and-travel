@@ -1,0 +1,30 @@
+/* ------------------------------------------------------------ *\
+	Locations
+\* ------------------------------------------------------------ */
+
+.locations { margin-top: 4.33vw; background-repeat: no-repeat; background-size: 89.95vw 92.97vw; display: flex; justify-content: space-between; flex-wrap: wrap; list-style: none; padding: 0 3.54vw 0 4.08vw; }
+
+.locations .location { flex: 0 0 50%; margin-top: -0.5vw; margin-bottom: -0.75vw; display: flex; align-items: center;}
+.locations .location:nth-child(odd) { text-align: left; }
+.locations .location:nth-child(even) { text-align: right; flex-flow: row-reverse; }
+.locations .location:nth-child(even) p { margin: -1.42vw 1.08vw 0; }
+.locations .location:nth-child(2) p { margin-top: -8.17vw; }
+.locations .location:nth-child(2) span { top: calc(50% - 2.75vw); }
+.locations .location:nth-child(3) p { margin-top: 2.08vw; }
+.locations .location:nth-child(3) span { top: calc(50% + 1.58vw); }
+.locations .location:nth-child(4) p { margin-top: -4.58vw; }
+.locations .location:nth-child(4) span { top: calc(50% - 4.5vw); }
+.locations .location:nth-child(5) p { margin-top: 10vw; }
+.locations .location:nth-child(5) span { top: 2.5vw; }
+.locations .location:nth-child(6) p { margin-top: -9.58vw; }
+.locations .location:nth-child(6) span { top: -3.5vw; }
+.locations .location:nth-child(7) p { margin-top: -1.83vw; }
+.locations .location:nth-child(7) span { top: -16.67vw; }
+.locations .location:nth-child(8) p { margin-top: -12.08vw; }
+.locations .location:nth-child(8) span { top: -12.5vw; }
+
+.locations .location p { margin: -1.42vw 0.29vw 0; }
+
+.locations .location .location__image { position: relative; display: inline-block; }
+.locations .location span { background-size: cover; display: inline-block; position: absolute; top: calc(50% + 0.75vw); left: 100%; }
+.locations .location:nth-child(even) span { left: auto; right: calc(100% + 1.08vw); }

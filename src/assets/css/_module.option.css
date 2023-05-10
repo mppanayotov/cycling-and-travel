@@ -1,0 +1,42 @@
+/* ------------------------------------------------------------ *\
+	Options
+\* ------------------------------------------------------------ */
+
+.options { padding-left: 15.96vw; padding-right: 11.67vw; position: relative; text-align: left; margin-top: -1.38vw; padding-top: 4.33vw; padding-bottom: 1.65em; margin-bottom: 0; }
+.options + .options { margin-top: 2.03vw; margin-bottom: -3.5vw; }
+
+.options:before { content: ''; background-image: url(../images/temp/options-before.png); background-repeat: no-repeat; width: 5.26vw; height: 100%; background-size: cover; position: absolute; left: 8vw; top: -0.09vw; background-size: 5.26vw 100%; }
+.options--reversed:after { content: ''; background-image: url(../images/temp/options-after.png); background-repeat: no-repeat; width: 5.26vw; height: 100%; background-size: cover; position: absolute; right: 7.75vw; top: 0; background-size: 5.26vw 100%; }
+.options--reversed:before { display: none; }
+
+.option { display: flex; flex-wrap: wrap; align-items: center; width: 100%; }
+.option + .option { margin-top: 4.5vw; }
+
+.option .list-stars li { margin-bottom: 0.25vw; }
+
+.option .option__image { width: 7.38em; text-align: center; margin-right: 4.5vw; }
+
+.option .option__inner { max-width: calc(100% - 3.33vw); }
+
+.option .option__content { width: calc(100% - 18.42vw); display: flex; align-items: flex-end; flex-wrap: wrap; justify-content: space-between; padding-left: 1.75vw; padding-bottom: 1.92vw; position: relative; }
+.option .option__content:after { content: ''; position: absolute; width: 100%; bottom: 0; left: 0; background: url(../images/temp/dash.png) repeat-x 0 0; /*height: 0.26vw;*/ height: 2px; background-size: 5% 100%; }
+.option .option__content:before { content: ''; position: absolute; bottom: -0.33vw; right: 0; border-radius: 50%; background: rgba(0,0,0,.3); width: 0.97vw; height: 0.97vw; }
+.option .option__content i { margin-right: -3.75vw; margin-bottom: 0.5vw; }
+
+.option h6 { text-transform: uppercase; font-weight: 500; margin-bottom: 0.75vw; }
+
+.options--reversed { padding-right: 15.67vw; padding-left: 11.38vw; }
+.options--reversed .option .option__content,
+.options--reversed .option { flex-flow: row-reverse; }
+.options--reversed .option .option__image { margin-right: 0; margin-left: 4.5vw; }
+.options--reversed .option .option__content:after { background-position: right top; }
+.options--reversed .option .option__content:before { right: auto; left: 0; }
+.options--reversed .option .option__content i { margin-left: -3.54vw; }
+.options--reversed .option .option__content { margin-top: 2.13vw; justify-content: flex-end; }
+.options--reversed .option .option__inner { margin-left: 5.83vw; max-width: calc(100% - 7.5vw); }
+
+
+/* Mobile */
+$breakpoint-mobile {
+	.option .option__content:after { height: 1px; }
+}
